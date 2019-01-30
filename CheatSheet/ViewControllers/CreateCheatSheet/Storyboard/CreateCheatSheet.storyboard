@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wyp-pG-fND">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="vJU-oU-c7T">
+            <objects>
+                <navigationController id="wyp-pG-fND" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="rdv-Fd-TL6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.97647058819999999" green="0.3294117647" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="A2g-m4-7Ny" kind="relationship" relationship="rootViewController" id="8x8-2x-XFj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SP8-so-cKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1387" y="111"/>
+        </scene>
+        <!--Create Cheast Sheet-->
+        <scene sceneID="1iy-U6-CrD">
+            <objects>
+                <viewController id="A2g-m4-7Ny" customClass="CreateCheatSheetViewController" customModule="CheatSheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4kB-FX-J9R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nwh-0g-z8C">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOD-kf-bMW" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="78.5"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ExA-LX-mhR">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="36.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Title"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="A2g-m4-7Ny" id="Pvh-tZ-FwL"/>
+                                                </connections>
+                                            </textView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tTa-4f-3Fc" userLabel="SeparatorView">
+                                                <rect key="frame" x="0.0" y="36.5" width="375" height="1"/>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.3294117647" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="GfW-aS-HV8"/>
+                                                </constraints>
+                                            </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rtV-x5-2Ew">
+                                                <rect key="frame" x="0.0" y="45.5" width="375" height="33"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Content"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="A2g-m4-7Ny" id="ogM-DF-1DY"/>
+                                                </connections>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="tTa-4f-3Fc" firstAttribute="leading" secondItem="EOD-kf-bMW" secondAttribute="leading" id="1of-z0-pvw"/>
+                                            <constraint firstItem="tTa-4f-3Fc" firstAttribute="top" secondItem="ExA-LX-mhR" secondAttribute="bottom" id="2m7-kh-HNM"/>
+                                            <constraint firstAttribute="bottom" secondItem="rtV-x5-2Ew" secondAttribute="bottom" id="Jl8-f2-ksH"/>
+                                            <constraint firstItem="ExA-LX-mhR" firstAttribute="top" secondItem="EOD-kf-bMW" secondAttribute="top" id="MW3-kK-vVb"/>
+                                            <constraint firstAttribute="trailing" secondItem="rtV-x5-2Ew" secondAttribute="trailing" id="QDO-wZ-4kL"/>
+                                            <constraint firstItem="ExA-LX-mhR" firstAttribute="leading" secondItem="EOD-kf-bMW" secondAttribute="leading" id="VoV-hQ-1O2"/>
+                                            <constraint firstAttribute="trailing" secondItem="ExA-LX-mhR" secondAttribute="trailing" id="ZWS-go-qbD"/>
+                                            <constraint firstAttribute="trailing" secondItem="tTa-4f-3Fc" secondAttribute="trailing" id="dKe-PW-rFF"/>
+                                            <constraint firstItem="rtV-x5-2Ew" firstAttribute="leading" secondItem="EOD-kf-bMW" secondAttribute="leading" id="fGg-Qf-CTi"/>
+                                            <constraint firstItem="rtV-x5-2Ew" firstAttribute="top" secondItem="tTa-4f-3Fc" secondAttribute="bottom" constant="8" id="gJH-22-acn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="EOD-kf-bMW" firstAttribute="top" secondItem="Nwh-0g-z8C" secondAttribute="top" id="3tw-Hn-9h9"/>
+                                    <constraint firstAttribute="trailing" secondItem="EOD-kf-bMW" secondAttribute="trailing" id="9z4-H7-BoR"/>
+                                    <constraint firstItem="EOD-kf-bMW" firstAttribute="leading" secondItem="Nwh-0g-z8C" secondAttribute="leading" id="RED-n0-CAm"/>
+                                    <constraint firstAttribute="bottom" secondItem="EOD-kf-bMW" secondAttribute="bottom" id="nCT-nA-ekx"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iuF-Ho-pqy" userLabel="BottomSpacerView">
+                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="B6P-Lc-i37"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1647058824" green="0.1647058824" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nwh-0g-z8C" firstAttribute="top" secondItem="axp-O5-57n" secondAttribute="top" id="ALm-T8-Tt6"/>
+                            <constraint firstItem="Nwh-0g-z8C" firstAttribute="leading" secondItem="axp-O5-57n" secondAttribute="leading" id="PlM-O6-6pn"/>
+                            <constraint firstItem="Nwh-0g-z8C" firstAttribute="trailing" secondItem="axp-O5-57n" secondAttribute="trailing" id="RQn-te-0xk"/>
+                            <constraint firstAttribute="trailing" secondItem="iuF-Ho-pqy" secondAttribute="trailing" id="eHv-1u-ijv"/>
+                            <constraint firstItem="iuF-Ho-pqy" firstAttribute="leading" secondItem="4kB-FX-J9R" secondAttribute="leading" id="nZ3-wQ-nED"/>
+                            <constraint firstAttribute="bottom" secondItem="iuF-Ho-pqy" secondAttribute="bottom" id="r6z-hb-cfJ"/>
+                            <constraint firstItem="iuF-Ho-pqy" firstAttribute="top" secondItem="Nwh-0g-z8C" secondAttribute="bottom" id="u4g-7f-mfn"/>
+                            <constraint firstItem="EOD-kf-bMW" firstAttribute="width" secondItem="axp-O5-57n" secondAttribute="width" id="y3N-zc-b5y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="axp-O5-57n"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create Cheast Sheet" id="Cbl-tg-PVq"/>
+                    <connections>
+                        <outlet property="bottomSpaceViewHeightConstraint" destination="B6P-Lc-i37" id="1E3-Gr-pMw"/>
+                        <outlet property="contentTextView" destination="rtV-x5-2Ew" id="n1z-Qo-XG4"/>
+                        <outlet property="scrollView" destination="Nwh-0g-z8C" id="i2D-gX-4IQ"/>
+                        <outlet property="titleTextView" destination="ExA-LX-mhR" id="Mg2-1v-NtF"/>
+                        <segue destination="en2-WL-meE" kind="unwind" identifier="FinishCheatSheetCreation" unwindAction="onCreateCheatSheetFinishedWithSegue:" id="9Qb-Gr-9n6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LvR-1l-8qm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="en2-WL-meE" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-577" y="110"/>
+        </scene>
+    </scenes>
+</document>

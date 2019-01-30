@@ -46,7 +46,7 @@
                                 <rect key="frame" x="0.0" y="116" width="375" height="551"/>
                                 <color key="backgroundColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="53" id="uGR-Zv-ZsQ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CheatSheetCell" rowHeight="53" id="uGR-Zv-ZsQ" customClass="CheatSheetTableViewCell" customModule="CheatSheet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="53"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uGR-Zv-ZsQ" id="lAJ-bi-1hO">
@@ -68,23 +68,63 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="kIY-9g-wI7" id="1gk-Hl-xcs"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Yxh-Vj-JdQ" id="5nQ-VD-maC"/>
+                                    <outlet property="delegate" destination="Yxh-Vj-JdQ" id="R4C-9M-isT"/>
+                                </connections>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8g-YN-2je" userLabel="EmptyStateContainerView">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbX-sK-Av1" customClass="EmptyStateView" customModule="CheatSheet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                                        <color key="backgroundColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="NotFound"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="No cheat sheets yet"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dbX-sK-Av1" secondAttribute="trailing" id="f1M-3z-05s"/>
+                                    <constraint firstAttribute="bottom" secondItem="dbX-sK-Av1" secondAttribute="bottom" id="gL1-EG-oUH"/>
+                                    <constraint firstItem="dbX-sK-Av1" firstAttribute="leading" secondItem="e8g-YN-2je" secondAttribute="leading" id="gfi-E7-ikp"/>
+                                    <constraint firstItem="dbX-sK-Av1" firstAttribute="top" secondItem="e8g-YN-2je" secondAttribute="top" id="tGC-pp-K4J"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JY1-wU-xbr" firstAttribute="trailing" secondItem="xYe-cB-4O0" secondAttribute="trailing" id="2og-s1-QiH"/>
                             <constraint firstItem="JY1-wU-xbr" firstAttribute="leading" secondItem="xYe-cB-4O0" secondAttribute="leading" id="31l-5h-Fpz"/>
+                            <constraint firstItem="e8g-YN-2je" firstAttribute="top" secondItem="xYe-cB-4O0" secondAttribute="top" id="5cm-MF-kOm"/>
+                            <constraint firstItem="e8g-YN-2je" firstAttribute="trailing" secondItem="xYe-cB-4O0" secondAttribute="trailing" id="Qwm-U2-c8G"/>
                             <constraint firstItem="JY1-wU-xbr" firstAttribute="bottom" secondItem="xYe-cB-4O0" secondAttribute="bottom" id="ToJ-k8-b9e"/>
                             <constraint firstItem="JY1-wU-xbr" firstAttribute="top" secondItem="xYe-cB-4O0" secondAttribute="top" id="gGR-pv-Z7v"/>
+                            <constraint firstItem="e8g-YN-2je" firstAttribute="leading" secondItem="xYe-cB-4O0" secondAttribute="leading" id="muk-jW-Yhv"/>
+                            <constraint firstItem="xYe-cB-4O0" firstAttribute="bottom" secondItem="e8g-YN-2je" secondAttribute="bottom" id="v39-nE-MW2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xYe-cB-4O0"/>
                     </view>
                     <navigationItem key="navigationItem" title="Cheat Sheets" id="UzF-IT-va1">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="amA-Jk-hPf"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="amA-Jk-hPf">
+                            <connections>
+                                <segue destination="mUA-ss-4Zk" kind="presentation" id="YWX-Ch-mWY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="emptyStateContainerView" destination="e8g-YN-2je" id="tpe-5N-Ay3"/>
+                        <outlet property="emptyStateView" destination="dbX-sK-Av1" id="o2o-aK-09i"/>
                         <outlet property="tableView" destination="JY1-wU-xbr" id="Cmh-Te-XCA"/>
                     </connections>
                 </viewController>
@@ -92,5 +132,16 @@
             </objects>
             <point key="canvasLocation" x="532" y="185.75712143928038"/>
         </scene>
+        <!--CreateCheatSheet-->
+        <scene sceneID="Q2b-0H-Rlv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateCheatSheet" id="mUA-ss-4Zk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8TR-hU-egC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134" y="185"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="NotFound" width="150" height="150"/>
+    </resources>
 </document>

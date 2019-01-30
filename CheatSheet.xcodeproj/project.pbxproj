@@ -12,6 +12,25 @@
 		CB099F27220191F0002A8039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB099F26220191F0002A8039 /* Assets.xcassets */; };
 		CB099F2A220191F0002A8039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB099F28220191F0002A8039 /* LaunchScreen.storyboard */; };
 		CB099F37220194C0002A8039 /* CheatSheetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F36220194C0002A8039 /* CheatSheetsTableViewController.swift */; };
+		CB099F3B22019AD1002A8039 /* CheatSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F3A22019AD1002A8039 /* CheatSheet.swift */; };
+		CB099F3F22019B44002A8039 /* CreateCheatSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB099F3E22019B44002A8039 /* CreateCheatSheet.storyboard */; };
+		CB099F4322019F08002A8039 /* UITextViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F4222019F08002A8039 /* UITextViewExtensions.swift */; };
+		CB099F452201A458002A8039 /* CreateCheatSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F442201A458002A8039 /* CreateCheatSheetViewController.swift */; };
+		CB099F472201A655002A8039 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F462201A655002A8039 /* Log.swift */; };
+		CB099F4E2201A698002A8039 /* LoggedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F492201A698002A8039 /* LoggedPageViewController.swift */; };
+		CB099F4F2201A698002A8039 /* LoggedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F4A2201A698002A8039 /* LoggedTableViewController.swift */; };
+		CB099F502201A698002A8039 /* LoggedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F4B2201A698002A8039 /* LoggedViewController.swift */; };
+		CB099F512201A698002A8039 /* LoggedNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F4C2201A698002A8039 /* LoggedNavigationController.swift */; };
+		CB099F522201A698002A8039 /* LoggedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F4D2201A698002A8039 /* LoggedTabBarController.swift */; };
+		CB099F572201B23B002A8039 /* KeyboardScrollableHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F542201B23B002A8039 /* KeyboardScrollableHandler.swift */; };
+		CB099F582201B23B002A8039 /* DictionaryReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F552201B23B002A8039 /* DictionaryReceiver.swift */; };
+		CB099F592201B23B002A8039 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F562201B23B002A8039 /* KeyboardHandler.swift */; };
+		CB099F5B2201B73C002A8039 /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F5A2201B73C002A8039 /* CGRectExtension.swift */; };
+		CB099F5E2201B84B002A8039 /* CheatSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F5D2201B84B002A8039 /* CheatSheetTableViewCell.swift */; };
+		CB099F602201CDB6002A8039 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F5F2201CDB6002A8039 /* EmptyStateView.swift */; };
+		CB099F632201CDEC002A8039 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F622201CDEC002A8039 /* Fonts.swift */; };
+		CB099F652201CE3F002A8039 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F642201CE3F002A8039 /* Colors.swift */; };
+		CB099F672201CEA9002A8039 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F662201CEA9002A8039 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +41,25 @@
 		CB099F29220191F0002A8039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB099F2B220191F0002A8039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB099F36220194C0002A8039 /* CheatSheetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheetsTableViewController.swift; sourceTree = "<group>"; };
+		CB099F3A22019AD1002A8039 /* CheatSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheet.swift; sourceTree = "<group>"; };
+		CB099F3E22019B44002A8039 /* CreateCheatSheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCheatSheet.storyboard; sourceTree = "<group>"; };
+		CB099F4222019F08002A8039 /* UITextViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtensions.swift; sourceTree = "<group>"; };
+		CB099F442201A458002A8039 /* CreateCheatSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCheatSheetViewController.swift; sourceTree = "<group>"; };
+		CB099F462201A655002A8039 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		CB099F492201A698002A8039 /* LoggedPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedPageViewController.swift; sourceTree = "<group>"; };
+		CB099F4A2201A698002A8039 /* LoggedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedTableViewController.swift; sourceTree = "<group>"; };
+		CB099F4B2201A698002A8039 /* LoggedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedViewController.swift; sourceTree = "<group>"; };
+		CB099F4C2201A698002A8039 /* LoggedNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedNavigationController.swift; sourceTree = "<group>"; };
+		CB099F4D2201A698002A8039 /* LoggedTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedTabBarController.swift; sourceTree = "<group>"; };
+		CB099F542201B23B002A8039 /* KeyboardScrollableHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardScrollableHandler.swift; sourceTree = "<group>"; };
+		CB099F552201B23B002A8039 /* DictionaryReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryReceiver.swift; sourceTree = "<group>"; };
+		CB099F562201B23B002A8039 /* KeyboardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
+		CB099F5A2201B73C002A8039 /* CGRectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
+		CB099F5D2201B84B002A8039 /* CheatSheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheetTableViewCell.swift; sourceTree = "<group>"; };
+		CB099F5F2201CDB6002A8039 /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		CB099F622201CDEC002A8039 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		CB099F642201CE3F002A8039 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CB099F662201CEA9002A8039 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +92,12 @@
 		CB099F1E220191EE002A8039 /* CheatSheet */ = {
 			isa = PBXGroup;
 			children = (
+				CB099F612201CDE0002A8039 /* Configuration */,
+				CB099F3922019AC4002A8039 /* Models */,
 				CB099F342201922E002A8039 /* Resources */,
+				CB099F4022019EE6002A8039 /* Tools */,
 				CB099F312201920D002A8039 /* ViewControllers */,
+				CB099F5C2201B82A002A8039 /* Views */,
 				CB099F1F220191EE002A8039 /* AppDelegate.swift */,
 				CB099F2B220191F0002A8039 /* Info.plist */,
 			);
@@ -65,6 +107,7 @@
 		CB099F312201920D002A8039 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CB099F3C22019B13002A8039 /* CreateCheatSheet */,
 				CB099F3522019239002A8039 /* LaunchScreen */,
 				CB099F3222019218002A8039 /* Main */,
 			);
@@ -102,6 +145,92 @@
 				CB099F28220191F0002A8039 /* LaunchScreen.storyboard */,
 			);
 			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		CB099F3922019AC4002A8039 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB099F3A22019AD1002A8039 /* CheatSheet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB099F3C22019B13002A8039 /* CreateCheatSheet */ = {
+			isa = PBXGroup;
+			children = (
+				CB099F3D22019B36002A8039 /* Storyboard */,
+				CB099F442201A458002A8039 /* CreateCheatSheetViewController.swift */,
+			);
+			path = CreateCheatSheet;
+			sourceTree = "<group>";
+		};
+		CB099F3D22019B36002A8039 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CB099F3E22019B44002A8039 /* CreateCheatSheet.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CB099F4022019EE6002A8039 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CB099F4122019EED002A8039 /* Extensions */,
+				CB099F532201B23B002A8039 /* Protocols */,
+				CB099F482201A698002A8039 /* ViewControllers */,
+				CB099F462201A655002A8039 /* Log.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		CB099F4122019EED002A8039 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB099F5A2201B73C002A8039 /* CGRectExtension.swift */,
+				CB099F4222019F08002A8039 /* UITextViewExtensions.swift */,
+				CB099F662201CEA9002A8039 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB099F482201A698002A8039 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB099F492201A698002A8039 /* LoggedPageViewController.swift */,
+				CB099F4A2201A698002A8039 /* LoggedTableViewController.swift */,
+				CB099F4B2201A698002A8039 /* LoggedViewController.swift */,
+				CB099F4C2201A698002A8039 /* LoggedNavigationController.swift */,
+				CB099F4D2201A698002A8039 /* LoggedTabBarController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CB099F532201B23B002A8039 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CB099F542201B23B002A8039 /* KeyboardScrollableHandler.swift */,
+				CB099F552201B23B002A8039 /* DictionaryReceiver.swift */,
+				CB099F562201B23B002A8039 /* KeyboardHandler.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CB099F5C2201B82A002A8039 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB099F5D2201B84B002A8039 /* CheatSheetTableViewCell.swift */,
+				CB099F5F2201CDB6002A8039 /* EmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB099F612201CDE0002A8039 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CB099F642201CE3F002A8039 /* Colors.swift */,
+				CB099F622201CDEC002A8039 /* Fonts.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB099F3F22019B44002A8039 /* CreateCheatSheet.storyboard in Resources */,
 				CB099F2A220191F0002A8039 /* LaunchScreen.storyboard in Resources */,
 				CB099F27220191F0002A8039 /* Assets.xcassets in Resources */,
 				CB099F25220191EE002A8039 /* Main.storyboard in Resources */,
@@ -175,8 +305,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB099F5B2201B73C002A8039 /* CGRectExtension.swift in Sources */,
+				CB099F3B22019AD1002A8039 /* CheatSheet.swift in Sources */,
+				CB099F4E2201A698002A8039 /* LoggedPageViewController.swift in Sources */,
+				CB099F512201A698002A8039 /* LoggedNavigationController.swift in Sources */,
+				CB099F502201A698002A8039 /* LoggedViewController.swift in Sources */,
+				CB099F602201CDB6002A8039 /* EmptyStateView.swift in Sources */,
+				CB099F572201B23B002A8039 /* KeyboardScrollableHandler.swift in Sources */,
+				CB099F672201CEA9002A8039 /* UIColorExtension.swift in Sources */,
 				CB099F20220191EE002A8039 /* AppDelegate.swift in Sources */,
+				CB099F4F2201A698002A8039 /* LoggedTableViewController.swift in Sources */,
+				CB099F592201B23B002A8039 /* KeyboardHandler.swift in Sources */,
+				CB099F5E2201B84B002A8039 /* CheatSheetTableViewCell.swift in Sources */,
+				CB099F522201A698002A8039 /* LoggedTabBarController.swift in Sources */,
+				CB099F652201CE3F002A8039 /* Colors.swift in Sources */,
+				CB099F472201A655002A8039 /* Log.swift in Sources */,
 				CB099F37220194C0002A8039 /* CheatSheetsTableViewController.swift in Sources */,
+				CB099F582201B23B002A8039 /* DictionaryReceiver.swift in Sources */,
+				CB099F452201A458002A8039 /* CreateCheatSheetViewController.swift in Sources */,
+				CB099F632201CDEC002A8039 /* Fonts.swift in Sources */,
+				CB099F4322019F08002A8039 /* UITextViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
