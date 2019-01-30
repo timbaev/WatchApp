@@ -31,6 +31,8 @@
 		CB099F632201CDEC002A8039 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F622201CDEC002A8039 /* Fonts.swift */; };
 		CB099F652201CE3F002A8039 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F642201CE3F002A8039 /* Colors.swift */; };
 		CB099F672201CEA9002A8039 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F662201CEA9002A8039 /* UIColorExtension.swift */; };
+		CB099F6B2201D21D002A8039 /* CheatSheetDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB099F6A2201D21D002A8039 /* CheatSheetDetails.storyboard */; };
+		CB099F6D2201D36B002A8039 /* CheatSheetDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F6C2201D36B002A8039 /* CheatSheetDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		CB099F622201CDEC002A8039 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		CB099F642201CE3F002A8039 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CB099F662201CEA9002A8039 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		CB099F6A2201D21D002A8039 /* CheatSheetDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheatSheetDetails.storyboard; sourceTree = "<group>"; };
+		CB099F6C2201D36B002A8039 /* CheatSheetDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheetDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		CB099F312201920D002A8039 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CB099F682201D1FB002A8039 /* CheatSheetDetails */,
 				CB099F3C22019B13002A8039 /* CreateCheatSheet */,
 				CB099F3522019239002A8039 /* LaunchScreen */,
 				CB099F3222019218002A8039 /* Main */,
@@ -233,6 +238,23 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
+		CB099F682201D1FB002A8039 /* CheatSheetDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CB099F692201D209002A8039 /* Storyboard */,
+				CB099F6C2201D36B002A8039 /* CheatSheetDetailsViewController.swift */,
+			);
+			path = CheatSheetDetails;
+			sourceTree = "<group>";
+		};
+		CB099F692201D209002A8039 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CB099F6A2201D21D002A8039 /* CheatSheetDetails.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -293,6 +315,7 @@
 			files = (
 				CB099F3F22019B44002A8039 /* CreateCheatSheet.storyboard in Resources */,
 				CB099F2A220191F0002A8039 /* LaunchScreen.storyboard in Resources */,
+				CB099F6B2201D21D002A8039 /* CheatSheetDetails.storyboard in Resources */,
 				CB099F27220191F0002A8039 /* Assets.xcassets in Resources */,
 				CB099F25220191EE002A8039 /* Main.storyboard in Resources */,
 			);
@@ -307,6 +330,7 @@
 			files = (
 				CB099F5B2201B73C002A8039 /* CGRectExtension.swift in Sources */,
 				CB099F3B22019AD1002A8039 /* CheatSheet.swift in Sources */,
+				CB099F6D2201D36B002A8039 /* CheatSheetDetailsViewController.swift in Sources */,
 				CB099F4E2201A698002A8039 /* LoggedPageViewController.swift in Sources */,
 				CB099F512201A698002A8039 /* LoggedNavigationController.swift in Sources */,
 				CB099F502201A698002A8039 /* LoggedViewController.swift in Sources */,

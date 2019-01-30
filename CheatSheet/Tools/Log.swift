@@ -66,7 +66,7 @@ public final class Log {
     // MARK: -
 
     public static func initialize(withDateFormat dateFormat: String, fileName: String? = nil) {
-        #if LOGGING
+        #if DEBUG
             Log.dateFormatter.dateFormat = dateFormat
             
             Log.fileName = fileName
@@ -85,31 +85,31 @@ public final class Log {
     }
 
     public static func low(_ text: String, from sender: Any?, date: Date = Date()) {
-        #if LOGGING
+        #if DEBUG
             Log.print(layer: "<*  >", text: text, sender: sender, date: date)
         #endif
     }
 
     public static func medium(_ text: String, from sender: Any?, date: Date = Date()) {
-        #if LOGGING
+        #if DEBUG
             Log.print(layer: "<** >", text: text, sender: sender, date: date)
         #endif
     }
 
     public static func high(_ text: String, from sender: Any?, date: Date = Date()) {
-        #if LOGGING
+        #if DEBUG
             Log.print(layer: "<***>", text: text, sender: sender, date: date)
         #endif
     }
 
     public static func extra(_ text: String, from sender: Any?, date: Date = Date()) {
-        #if LOGGING
+        #if DEBUG
             Log.print(layer: "<--->", text: text, sender: sender, date: date)
         #endif
     }
 
     public static func clear() {
-        #if LOGGING
+        #if DEBUG
             if let filePath = Log.filePath {
                 try? "Log File".write(toFile: filePath, atomically: true, encoding: .utf8)
             }

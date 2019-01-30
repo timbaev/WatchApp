@@ -146,6 +146,8 @@ extension CreateCheatSheetViewController: KeyboardScrollableHandler {
 
 extension CreateCheatSheetViewController: KeyboardHandler {
     
+    // MARK: - Instance Methods
+    
     func handle(keyboardHeight: CGFloat, view: UIView) {
         self.bottomSpaceViewHeightConstraint.constant = keyboardHeight
         

@@ -19,6 +19,15 @@ class CheatSheetsTableViewController: LoggedViewController {
         static let cheatSheetCellIdentifier = "CheatSheetCell"
     }
     
+    // MARK: -
+    
+    fileprivate enum Segues {
+        
+        // MARK: - Type Properties
+        
+        static let showCheatSheetDetails = "ShowCheatSheetDetails"
+    }
+    
     // MARK: - Instance Properties
     
     @IBOutlet fileprivate weak var tableView: UITableView!
@@ -34,6 +43,10 @@ class CheatSheetsTableViewController: LoggedViewController {
     
     @IBAction fileprivate func onCreateCheatSheetFinished(segue: UIStoryboardSegue) {
         Log.high("onCreateCheatSheetFinished(segue: \(String(describing: segue.identifier)))", from: self)
+    }
+    
+    @IBAction fileprivate func onUpdateCheatSheetFinished(segue: UIStoryboardSegue) {
+        Log.high("onUpdateCheatSheetFinished(segue: \(String(describing: segue.identifier)))", from: self)
     }
     
     // MARK: -
@@ -65,6 +78,32 @@ class CheatSheetsTableViewController: LoggedViewController {
         
         if self.cheatSheets.isEmpty {
             self.emptyStateContainerView.isHidden = false
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        switch segue.identifier {
+        case Segues.showCheatSheetDetails:
+            guard let cheatSheet = sender as? CheatSheet else {
+                fatalError()
+            }
+            
+            let dictionaryReceiver: DictionaryReceiver?
+            
+            if let navigationController = segue.destination as? UINavigationController {
+                dictionaryReceiver = navigationController.viewControllers.first as? DictionaryReceiver
+            } else {
+                dictionaryReceiver = segue.destination as? DictionaryReceiver
+            }
+            
+            if let dictionaryReceiver = dictionaryReceiver {
+                dictionaryReceiver.apply(dictionary: ["cheatSheet": cheatSheet])
+            }
+            
+        default:
+            break
         }
     }
 }
@@ -111,5 +150,9 @@ extension CheatSheetsTableViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let cheatSheet = self.cheatSheets[indexPath.row]
+        
+        self.performSegue(withIdentifier: Segues.showCheatSheetDetails, sender: cheatSheet)
     }
 }

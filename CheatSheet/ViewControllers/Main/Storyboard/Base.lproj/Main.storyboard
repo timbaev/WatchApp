@@ -126,6 +126,7 @@
                         <outlet property="emptyStateContainerView" destination="e8g-YN-2je" id="tpe-5N-Ay3"/>
                         <outlet property="emptyStateView" destination="dbX-sK-Av1" id="o2o-aK-09i"/>
                         <outlet property="tableView" destination="JY1-wU-xbr" id="Cmh-Te-XCA"/>
+                        <segue destination="gfA-Qu-ekD" kind="show" identifier="ShowCheatSheetDetails" id="iTX-xx-YZ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NGt-iZ-hhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -138,7 +139,15 @@
                 <viewControllerPlaceholder storyboardName="CreateCheatSheet" id="mUA-ss-4Zk" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8TR-hU-egC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1134" y="185"/>
+            <point key="canvasLocation" x="1131" y="113"/>
+        </scene>
+        <!--CheatSheetDetails-->
+        <scene sceneID="A7u-H6-nke">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CheatSheetDetails" id="gfA-Qu-ekD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNM-oI-CyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="269"/>
         </scene>
     </scenes>
     <resources>
