@@ -45,7 +45,57 @@
 		CB3ED8E72202EDC900821DD5 /* DefaultCheatSheetsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8E62202EDC900821DD5 /* DefaultCheatSheetsManager.swift */; };
 		CB3ED8EA2202F18E00821DD5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8E92202F18E00821DD5 /* Models.swift */; };
 		CB3ED8EC2202F24700821DD5 /* Managers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8EB2202F24700821DD5 /* Managers.swift */; };
+		CB3ED8F32203102400821DD5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3ED8F12203102400821DD5 /* Interface.storyboard */; };
+		CB3ED8F52203102600821DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3ED8F42203102600821DD5 /* Assets.xcassets */; };
+		CB3ED8FC2203102600821DD5 /* CheatSheetWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB3ED8FB2203102600821DD5 /* CheatSheetWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CB3ED9012203102600821DD5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED9002203102600821DD5 /* InterfaceController.swift */; };
+		CB3ED9032203102600821DD5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED9022203102600821DD5 /* ExtensionDelegate.swift */; };
+		CB3ED9052203102700821DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3ED9042203102700821DD5 /* Assets.xcassets */; };
+		CB3ED9092203102700821DD5 /* CheatSheetWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CB3ED8EF2203102300821DD5 /* CheatSheetWatch.app */; };
+		CB3ED919220311B400821DD5 /* CheatSheetRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED918220311B400821DD5 /* CheatSheetRowController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB3ED8FD2203102600821DD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB099F14220191EE002A8039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3ED8FA2203102600821DD5;
+			remoteInfo = "CheatSheetWatch Extension";
+		};
+		CB3ED9072203102700821DD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB099F14220191EE002A8039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3ED8EE2203102300821DD5;
+			remoteInfo = CheatSheetWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB3ED90D2203102700821DD5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB3ED8FC2203102600821DD5 /* CheatSheetWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3ED9112203102700821DD5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CB3ED9092203102700821DD5 /* CheatSheetWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		464279C7B6257188A23B4227 /* Pods-CheatSheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheatSheet.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheatSheet/Pods-CheatSheet.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +139,17 @@
 		CB3ED8E62202EDC900821DD5 /* DefaultCheatSheetsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCheatSheetsManager.swift; sourceTree = "<group>"; };
 		CB3ED8E92202F18E00821DD5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CB3ED8EB2202F24700821DD5 /* Managers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managers.swift; sourceTree = "<group>"; };
+		CB3ED8EF2203102300821DD5 /* CheatSheetWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheatSheetWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3ED8F22203102400821DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CB3ED8F42203102600821DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB3ED8F62203102600821DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB3ED8FB2203102600821DD5 /* CheatSheetWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CheatSheetWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3ED9002203102600821DD5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CB3ED9022203102600821DD5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CB3ED9042203102700821DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB3ED9062203102700821DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB3ED918220311B400821DD5 /* CheatSheetRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheetRowController.swift; sourceTree = "<group>"; };
+		CB3ED91A2203165800821DD5 /* CheatSheet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheatSheet.entitlements; sourceTree = "<group>"; };
 		FCBB89E9D5155919EC33671F /* Pods_CheatSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheatSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,6 +159,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B346BCE043C59D805EAC3C5 /* Pods_CheatSheet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3ED8F82203102600821DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				CB099F1E220191EE002A8039 /* CheatSheet */,
+				CB3ED8F02203102400821DD5 /* CheatSheetWatch */,
+				CB3ED8FF2203102600821DD5 /* CheatSheetWatch Extension */,
 				CB099F1D220191EE002A8039 /* Products */,
 				72C9EC2B6B4EC776A6712EBE /* Pods */,
 				9102AAEACDEBE00FC3A2C8C7 /* Frameworks */,
@@ -135,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				CB099F1C220191EE002A8039 /* CheatSheet.app */,
+				CB3ED8EF2203102300821DD5 /* CheatSheetWatch.app */,
+				CB3ED8FB2203102600821DD5 /* CheatSheetWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +214,7 @@
 		CB099F1E220191EE002A8039 /* CheatSheet */ = {
 			isa = PBXGroup;
 			children = (
+				CB3ED91A2203165800821DD5 /* CheatSheet.entitlements */,
 				CB099F612201CDE0002A8039 /* Configuration */,
 				CB099F3922019AC4002A8039 /* Models */,
 				CB099F342201922E002A8039 /* Resources */,
@@ -344,6 +417,76 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		CB3ED8F02203102400821DD5 /* CheatSheetWatch */ = {
+			isa = PBXGroup;
+			children = (
+				CB3ED9152203118400821DD5 /* Interfaces */,
+				CB3ED9172203119000821DD5 /* Resources */,
+				CB3ED8F62203102600821DD5 /* Info.plist */,
+			);
+			path = CheatSheetWatch;
+			sourceTree = "<group>";
+		};
+		CB3ED8FF2203102600821DD5 /* CheatSheetWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CB3ED9122203115400821DD5 /* Interfaces */,
+				CB3ED9142203117400821DD5 /* Resources */,
+				CB3ED9022203102600821DD5 /* ExtensionDelegate.swift */,
+				CB3ED9062203102700821DD5 /* Info.plist */,
+			);
+			path = "CheatSheetWatch Extension";
+			sourceTree = "<group>";
+		};
+		CB3ED9122203115400821DD5 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CB3ED9132203115C00821DD5 /* Main */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CB3ED9132203115C00821DD5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CB3ED918220311B400821DD5 /* CheatSheetRowController.swift */,
+				CB3ED9002203102600821DD5 /* InterfaceController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CB3ED9142203117400821DD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB3ED9042203102700821DD5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB3ED9152203118400821DD5 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CB3ED9162203118A00821DD5 /* Main */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CB3ED9162203118A00821DD5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CB3ED8F12203102400821DD5 /* Interface.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CB3ED9172203119000821DD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB3ED8F42203102600821DD5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,15 +499,51 @@
 				CB099F19220191EE002A8039 /* Frameworks */,
 				CB099F1A220191EE002A8039 /* Resources */,
 				767AA9F7BDE8E3CEB605B3A9 /* [CP] Embed Pods Frameworks */,
+				CB3ED9112203102700821DD5 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CB3ED9082203102700821DD5 /* PBXTargetDependency */,
 			);
 			name = CheatSheet;
 			productName = CheatSheet;
 			productReference = CB099F1C220191EE002A8039 /* CheatSheet.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CB3ED8EE2203102300821DD5 /* CheatSheetWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3ED90E2203102700821DD5 /* Build configuration list for PBXNativeTarget "CheatSheetWatch" */;
+			buildPhases = (
+				CB3ED8ED2203102300821DD5 /* Resources */,
+				CB3ED90D2203102700821DD5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB3ED8FE2203102600821DD5 /* PBXTargetDependency */,
+			);
+			name = CheatSheetWatch;
+			productName = CheatSheetWatch;
+			productReference = CB3ED8EF2203102300821DD5 /* CheatSheetWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CB3ED8FA2203102600821DD5 /* CheatSheetWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3ED90A2203102700821DD5 /* Build configuration list for PBXNativeTarget "CheatSheetWatch Extension" */;
+			buildPhases = (
+				CB3ED8F72203102600821DD5 /* Sources */,
+				CB3ED8F82203102600821DD5 /* Frameworks */,
+				CB3ED8F92203102600821DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CheatSheetWatch Extension";
+			productName = "CheatSheetWatch Extension";
+			productReference = CB3ED8FB2203102600821DD5 /* CheatSheetWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -377,6 +556,17 @@
 				ORGANIZATIONNAME = "Timur Shafigullin";
 				TargetAttributes = {
 					CB099F1B220191EE002A8039 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					CB3ED8EE2203102300821DD5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CB3ED8FA2203102600821DD5 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -395,6 +585,8 @@
 			projectRoot = "";
 			targets = (
 				CB099F1B220191EE002A8039 /* CheatSheet */,
+				CB3ED8EE2203102300821DD5 /* CheatSheetWatch */,
+				CB3ED8FA2203102600821DD5 /* CheatSheetWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -409,6 +601,23 @@
 				CB099F6B2201D21D002A8039 /* CheatSheetDetails.storyboard in Resources */,
 				CB099F27220191F0002A8039 /* Assets.xcassets in Resources */,
 				CB099F25220191EE002A8039 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3ED8ED2203102300821DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3ED8F52203102600821DD5 /* Assets.xcassets in Resources */,
+				CB3ED8F32203102400821DD5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3ED8F92203102600821DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3ED9052203102700821DD5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +712,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB3ED8F72203102600821DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3ED919220311B400821DD5 /* CheatSheetRowController.swift in Sources */,
+				CB3ED9032203102600821DD5 /* ExtensionDelegate.swift in Sources */,
+				CB3ED9012203102600821DD5 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB3ED8FE2203102600821DD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB3ED8FA2203102600821DD5 /* CheatSheetWatch Extension */;
+			targetProxy = CB3ED8FD2203102600821DD5 /* PBXContainerItemProxy */;
+		};
+		CB3ED9082203102700821DD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB3ED8EE2203102300821DD5 /* CheatSheetWatch */;
+			targetProxy = CB3ED9072203102700821DD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CB099F23220191EE002A8039 /* Main.storyboard */ = {
@@ -520,6 +752,14 @@
 				CB099F29220191F0002A8039 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CB3ED8F12203102400821DD5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB3ED8F22203102400821DD5 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -679,6 +919,88 @@
 			};
 			name = Release;
 		};
+		CB3ED90B2203102700821DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W56K4E4L5F;
+				INFOPLIST_FILE = "CheatSheetWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.timbaev.CheatSheet.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		CB3ED90C2203102700821DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W56K4E4L5F;
+				INFOPLIST_FILE = "CheatSheetWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.timbaev.CheatSheet.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		CB3ED90F2203102700821DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W56K4E4L5F;
+				IBSC_MODULE = CheatSheetWatch_Extension;
+				INFOPLIST_FILE = CheatSheetWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timbaev.CheatSheet.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		CB3ED9102203102700821DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W56K4E4L5F;
+				IBSC_MODULE = CheatSheetWatch_Extension;
+				INFOPLIST_FILE = CheatSheetWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timbaev.CheatSheet.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -696,6 +1018,24 @@
 			buildConfigurations = (
 				CB099F2F220191F0002A8039 /* Debug */,
 				CB099F30220191F0002A8039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB3ED90A2203102700821DD5 /* Build configuration list for PBXNativeTarget "CheatSheetWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3ED90B2203102700821DD5 /* Debug */,
+				CB3ED90C2203102700821DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB3ED90E2203102700821DD5 /* Build configuration list for PBXNativeTarget "CheatSheetWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3ED90F2203102700821DD5 /* Debug */,
+				CB3ED9102203102700821DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
