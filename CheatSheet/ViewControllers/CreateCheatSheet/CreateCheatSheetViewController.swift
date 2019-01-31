@@ -41,13 +41,16 @@ class CreateCheatSheetViewController: LoggedViewController {
             return
         }
         
-        guard let content = self.titleTextView.text else {
+        guard let content = self.contentTextView.text else {
             return
         }
         
-        let cheatSheet = CheatSheet(title: title, content: content)
-        
-        self.performSegue(withIdentifier: Segues.finishCheatSheetCreation, sender: cheatSheet)
+        Managers.cheatSheetManager.create { [unowned self] cheatSheet in
+            cheatSheet.title = title
+            cheatSheet.content = content
+            
+            self.performSegue(withIdentifier: Segues.finishCheatSheetCreation, sender: self)
+        }
     }
     
     @objc fileprivate func onCancelBarButtonItemTouchUpInside(_ sender: UIBarButtonItem) {
@@ -91,32 +94,6 @@ class CreateCheatSheetViewController: LoggedViewController {
         super.viewWillDisappear(animated)
         
         self.unsubscribeFromKeyboardNotifications()
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
-        
-        switch segue.identifier {
-        case Segues.finishCheatSheetCreation:
-            guard let cheatSheet = sender as? CheatSheet else {
-                return
-            }
-            
-            let dictionaryReceiver: DictionaryReceiver?
-            
-            if let navigationController = segue.destination as? UINavigationController {
-                dictionaryReceiver = navigationController.viewControllers.first as? DictionaryReceiver
-            } else {
-                dictionaryReceiver = segue.destination as? DictionaryReceiver
-            }
-            
-            if let dictionaryReceiver = dictionaryReceiver {
-                dictionaryReceiver.apply(dictionary: ["cheatSheet": cheatSheet])
-            }
-            
-        default:
-            break
-        }
     }
 }
 

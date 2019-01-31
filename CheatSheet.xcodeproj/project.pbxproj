@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B346BCE043C59D805EAC3C5 /* Pods_CheatSheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBB89E9D5155919EC33671F /* Pods_CheatSheet.framework */; };
 		CB099F20220191EE002A8039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F1F220191EE002A8039 /* AppDelegate.swift */; };
 		CB099F25220191EE002A8039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB099F23220191EE002A8039 /* Main.storyboard */; };
 		CB099F27220191F0002A8039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB099F26220191F0002A8039 /* Assets.xcassets */; };
 		CB099F2A220191F0002A8039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB099F28220191F0002A8039 /* LaunchScreen.storyboard */; };
 		CB099F37220194C0002A8039 /* CheatSheetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F36220194C0002A8039 /* CheatSheetsTableViewController.swift */; };
-		CB099F3B22019AD1002A8039 /* CheatSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F3A22019AD1002A8039 /* CheatSheet.swift */; };
 		CB099F3F22019B44002A8039 /* CreateCheatSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB099F3E22019B44002A8039 /* CreateCheatSheet.storyboard */; };
 		CB099F4322019F08002A8039 /* UITextViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F4222019F08002A8039 /* UITextViewExtensions.swift */; };
 		CB099F452201A458002A8039 /* CreateCheatSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F442201A458002A8039 /* CreateCheatSheetViewController.swift */; };
@@ -33,9 +33,23 @@
 		CB099F672201CEA9002A8039 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F662201CEA9002A8039 /* UIColorExtension.swift */; };
 		CB099F6B2201D21D002A8039 /* CheatSheetDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB099F6A2201D21D002A8039 /* CheatSheetDetails.storyboard */; };
 		CB099F6D2201D36B002A8039 /* CheatSheetDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F6C2201D36B002A8039 /* CheatSheetDetailsViewController.swift */; };
+		CB3ED8D22202E11D00821DD5 /* Sorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8D12202E11D00821DD5 /* Sorted.swift */; };
+		CB3ED8D42202E18900821DD5 /* StorageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8D32202E18900821DD5 /* StorageContext.swift */; };
+		CB3ED8D62202E1D800821DD5 /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8D52202E1D800821DD5 /* Storable.swift */; };
+		CB3ED8D92202E30F00821DD5 /* ObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8D82202E30F00821DD5 /* ObjectExtensions.swift */; };
+		CB3ED8DB2202E35100821DD5 /* RealmStorageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8DA2202E35100821DD5 /* RealmStorageContext.swift */; };
+		CB3ED8DD2202E3DE00821DD5 /* ConfigurationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8DC2202E3DE00821DD5 /* ConfigurationType.swift */; };
+		CB3ED8E02202EA7C00821DD5 /* CheatSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8DF2202EA7C00821DD5 /* CheatSheet.swift */; };
+		CB3ED8E22202EAC200821DD5 /* DefaultCheatSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8E12202EAC200821DD5 /* DefaultCheatSheet.swift */; };
+		CB3ED8E52202ED2300821DD5 /* CheatSheetsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8E42202ED2300821DD5 /* CheatSheetsManager.swift */; };
+		CB3ED8E72202EDC900821DD5 /* DefaultCheatSheetsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8E62202EDC900821DD5 /* DefaultCheatSheetsManager.swift */; };
+		CB3ED8EA2202F18E00821DD5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8E92202F18E00821DD5 /* Models.swift */; };
+		CB3ED8EC2202F24700821DD5 /* Managers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8EB2202F24700821DD5 /* Managers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		464279C7B6257188A23B4227 /* Pods-CheatSheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheatSheet.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheatSheet/Pods-CheatSheet.release.xcconfig"; sourceTree = "<group>"; };
+		95EA639FDDBC8B3096C5A410 /* Pods-CheatSheet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheatSheet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheatSheet/Pods-CheatSheet.debug.xcconfig"; sourceTree = "<group>"; };
 		CB099F1C220191EE002A8039 /* CheatSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheatSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB099F1F220191EE002A8039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB099F24220191EE002A8039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,7 +57,6 @@
 		CB099F29220191F0002A8039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB099F2B220191F0002A8039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB099F36220194C0002A8039 /* CheatSheetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheetsTableViewController.swift; sourceTree = "<group>"; };
-		CB099F3A22019AD1002A8039 /* CheatSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheet.swift; sourceTree = "<group>"; };
 		CB099F3E22019B44002A8039 /* CreateCheatSheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCheatSheet.storyboard; sourceTree = "<group>"; };
 		CB099F4222019F08002A8039 /* UITextViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtensions.swift; sourceTree = "<group>"; };
 		CB099F442201A458002A8039 /* CreateCheatSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCheatSheetViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +77,19 @@
 		CB099F662201CEA9002A8039 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		CB099F6A2201D21D002A8039 /* CheatSheetDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheatSheetDetails.storyboard; sourceTree = "<group>"; };
 		CB099F6C2201D36B002A8039 /* CheatSheetDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheetDetailsViewController.swift; sourceTree = "<group>"; };
+		CB3ED8D12202E11D00821DD5 /* Sorted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorted.swift; sourceTree = "<group>"; };
+		CB3ED8D32202E18900821DD5 /* StorageContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageContext.swift; sourceTree = "<group>"; };
+		CB3ED8D52202E1D800821DD5 /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
+		CB3ED8D82202E30F00821DD5 /* ObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectExtensions.swift; sourceTree = "<group>"; };
+		CB3ED8DA2202E35100821DD5 /* RealmStorageContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorageContext.swift; sourceTree = "<group>"; };
+		CB3ED8DC2202E3DE00821DD5 /* ConfigurationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationType.swift; sourceTree = "<group>"; };
+		CB3ED8DF2202EA7C00821DD5 /* CheatSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheet.swift; sourceTree = "<group>"; };
+		CB3ED8E12202EAC200821DD5 /* DefaultCheatSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCheatSheet.swift; sourceTree = "<group>"; };
+		CB3ED8E42202ED2300821DD5 /* CheatSheetsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheetsManager.swift; sourceTree = "<group>"; };
+		CB3ED8E62202EDC900821DD5 /* DefaultCheatSheetsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCheatSheetsManager.swift; sourceTree = "<group>"; };
+		CB3ED8E92202F18E00821DD5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		CB3ED8EB2202F24700821DD5 /* Managers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managers.swift; sourceTree = "<group>"; };
+		FCBB89E9D5155919EC33671F /* Pods_CheatSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheatSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,17 +97,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B346BCE043C59D805EAC3C5 /* Pods_CheatSheet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72C9EC2B6B4EC776A6712EBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95EA639FDDBC8B3096C5A410 /* Pods-CheatSheet.debug.xcconfig */,
+				464279C7B6257188A23B4227 /* Pods-CheatSheet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9102AAEACDEBE00FC3A2C8C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCBB89E9D5155919EC33671F /* Pods_CheatSheet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB099F13220191EE002A8039 = {
 			isa = PBXGroup;
 			children = (
 				CB099F1E220191EE002A8039 /* CheatSheet */,
 				CB099F1D220191EE002A8039 /* Products */,
+				72C9EC2B6B4EC776A6712EBE /* Pods */,
+				9102AAEACDEBE00FC3A2C8C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,7 +201,7 @@
 		CB099F3922019AC4002A8039 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CB099F3A22019AD1002A8039 /* CheatSheet.swift */,
+				CB3ED8DE2202EA6100821DD5 /* CheatSheet */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +226,7 @@
 		CB099F4022019EE6002A8039 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				CB3ED8D02202E10300821DD5 /* Storage */,
 				CB099F4122019EED002A8039 /* Extensions */,
 				CB099F532201B23B002A8039 /* Protocols */,
 				CB099F482201A698002A8039 /* ViewControllers */,
@@ -234,6 +281,8 @@
 			children = (
 				CB099F642201CE3F002A8039 /* Colors.swift */,
 				CB099F622201CDEC002A8039 /* Fonts.swift */,
+				CB3ED8EB2202F24700821DD5 /* Managers.swift */,
+				CB3ED8E92202F18E00821DD5 /* Models.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -255,6 +304,46 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		CB3ED8D02202E10300821DD5 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				CB3ED8D72202E2F700821DD5 /* Realm */,
+				CB3ED8DC2202E3DE00821DD5 /* ConfigurationType.swift */,
+				CB3ED8D52202E1D800821DD5 /* Storable.swift */,
+				CB3ED8D12202E11D00821DD5 /* Sorted.swift */,
+				CB3ED8D32202E18900821DD5 /* StorageContext.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		CB3ED8D72202E2F700821DD5 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				CB3ED8D82202E30F00821DD5 /* ObjectExtensions.swift */,
+				CB3ED8DA2202E35100821DD5 /* RealmStorageContext.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		CB3ED8DE2202EA6100821DD5 /* CheatSheet */ = {
+			isa = PBXGroup;
+			children = (
+				CB3ED8E32202ED1600821DD5 /* Manager */,
+				CB3ED8E12202EAC200821DD5 /* DefaultCheatSheet.swift */,
+				CB3ED8DF2202EA7C00821DD5 /* CheatSheet.swift */,
+			);
+			path = CheatSheet;
+			sourceTree = "<group>";
+		};
+		CB3ED8E32202ED1600821DD5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CB3ED8E62202EDC900821DD5 /* DefaultCheatSheetsManager.swift */,
+				CB3ED8E42202ED2300821DD5 /* CheatSheetsManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,9 +351,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB099F2E220191F0002A8039 /* Build configuration list for PBXNativeTarget "CheatSheet" */;
 			buildPhases = (
+				3BAAD8C6F9993FF875EDE2BC /* [CP] Check Pods Manifest.lock */,
 				CB099F18220191EE002A8039 /* Sources */,
 				CB099F19220191EE002A8039 /* Frameworks */,
 				CB099F1A220191EE002A8039 /* Resources */,
+				767AA9F7BDE8E3CEB605B3A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,17 +414,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BAAD8C6F9993FF875EDE2BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheatSheet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		767AA9F7BDE8E3CEB605B3A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CheatSheet/Pods-CheatSheet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheatSheet/Pods-CheatSheet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB099F18220191EE002A8039 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CB099F5B2201B73C002A8039 /* CGRectExtension.swift in Sources */,
-				CB099F3B22019AD1002A8039 /* CheatSheet.swift in Sources */,
 				CB099F6D2201D36B002A8039 /* CheatSheetDetailsViewController.swift in Sources */,
 				CB099F4E2201A698002A8039 /* LoggedPageViewController.swift in Sources */,
+				CB3ED8E52202ED2300821DD5 /* CheatSheetsManager.swift in Sources */,
 				CB099F512201A698002A8039 /* LoggedNavigationController.swift in Sources */,
 				CB099F502201A698002A8039 /* LoggedViewController.swift in Sources */,
+				CB3ED8D92202E30F00821DD5 /* ObjectExtensions.swift in Sources */,
+				CB3ED8D22202E11D00821DD5 /* Sorted.swift in Sources */,
 				CB099F602201CDB6002A8039 /* EmptyStateView.swift in Sources */,
 				CB099F572201B23B002A8039 /* KeyboardScrollableHandler.swift in Sources */,
 				CB099F672201CEA9002A8039 /* UIColorExtension.swift in Sources */,
@@ -343,11 +485,20 @@
 				CB099F5E2201B84B002A8039 /* CheatSheetTableViewCell.swift in Sources */,
 				CB099F522201A698002A8039 /* LoggedTabBarController.swift in Sources */,
 				CB099F652201CE3F002A8039 /* Colors.swift in Sources */,
+				CB3ED8DB2202E35100821DD5 /* RealmStorageContext.swift in Sources */,
+				CB3ED8E22202EAC200821DD5 /* DefaultCheatSheet.swift in Sources */,
 				CB099F472201A655002A8039 /* Log.swift in Sources */,
 				CB099F37220194C0002A8039 /* CheatSheetsTableViewController.swift in Sources */,
+				CB3ED8E72202EDC900821DD5 /* DefaultCheatSheetsManager.swift in Sources */,
 				CB099F582201B23B002A8039 /* DictionaryReceiver.swift in Sources */,
+				CB3ED8EC2202F24700821DD5 /* Managers.swift in Sources */,
+				CB3ED8D42202E18900821DD5 /* StorageContext.swift in Sources */,
+				CB3ED8EA2202F18E00821DD5 /* Models.swift in Sources */,
 				CB099F452201A458002A8039 /* CreateCheatSheetViewController.swift in Sources */,
+				CB3ED8D62202E1D800821DD5 /* Storable.swift in Sources */,
 				CB099F632201CDEC002A8039 /* Fonts.swift in Sources */,
+				CB3ED8E02202EA7C00821DD5 /* CheatSheet.swift in Sources */,
+				CB3ED8DD2202E3DE00821DD5 /* ConfigurationType.swift in Sources */,
 				CB099F4322019F08002A8039 /* UITextViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +643,7 @@
 		};
 		CB099F2F220191F0002A8039 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95EA639FDDBC8B3096C5A410 /* Pods-CheatSheet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -510,6 +662,7 @@
 		};
 		CB099F30220191F0002A8039 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 464279C7B6257188A23B4227 /* Pods-CheatSheet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

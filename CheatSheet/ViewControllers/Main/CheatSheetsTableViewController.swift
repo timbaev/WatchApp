@@ -57,16 +57,12 @@ class CheatSheetsTableViewController: LoggedViewController {
         cell.title = cheatSheet.title
     }
     
-    // MARK: -
-    
-    fileprivate func apply(cheatSheet: CheatSheet) {
-        Log.high("apply(cheatSheet: \(cheatSheet.title))", from: self)
-        
-        self.cheatSheets.append(cheatSheet)
-        
-        self.tableView.insertRows(at: [IndexPath(row: self.cheatSheets.count - 1, section: 0)], with: .automatic)
-        
-        self.emptyStateContainerView.isHidden = true
+    fileprivate func updateEmptyState() {
+        if self.cheatSheets.isEmpty {
+            self.emptyStateContainerView.isHidden = false
+        } else {
+            self.emptyStateContainerView.isHidden = true
+        }
     }
     
     // MARK: - UIViewController
@@ -75,9 +71,17 @@ class CheatSheetsTableViewController: LoggedViewController {
         super.viewDidLoad()
         
         self.tableView.tableFooterView = UIView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        if self.cheatSheets.isEmpty {
-            self.emptyStateContainerView.isHidden = false
+        Managers.cheatSheetManager.fetch { [unowned self] cheatSheets in
+            self.cheatSheets = cheatSheets
+            
+            self.tableView.reloadData()
+            
+            self.updateEmptyState()
         }
     }
     
@@ -105,21 +109,6 @@ class CheatSheetsTableViewController: LoggedViewController {
         default:
             break
         }
-    }
-}
-
-// MARK: - DictionaryReceiver
-
-extension CheatSheetsTableViewController: DictionaryReceiver {
-    
-    // MARK: - Instance Methods
-    
-    func apply(dictionary: [String : Any]) {
-        guard let cheatSheet = dictionary["cheatSheet"] as? CheatSheet else {
-            return
-        }
-        
-        self.apply(cheatSheet: cheatSheet)
     }
 }
 

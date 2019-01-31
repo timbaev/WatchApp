@@ -43,11 +43,20 @@ class CheatSheetDetailsViewController: LoggedViewController {
     // MARK: - Instance Methods
     
     @objc fileprivate func onSaveBarButtonItemTouchUpInside(_ sender: UIBarButtonItem) {
-        guard let _ = self.titleTextView.text, let _ = self.contentTextView.text else {
+        guard let title = self.titleTextView.text, let content = self.contentTextView.text else {
             return
         }
         
-        self.performSegue(withIdentifier: Segues.finishCheatSheetUpdate, sender: self)
+        guard let cheatSheet = self.cheatSheet else {
+            return
+        }
+        
+        Managers.cheatSheetManager.update { [unowned self] in
+            cheatSheet.title = title
+            cheatSheet.content = content
+            
+            self.performSegue(withIdentifier: Segues.finishCheatSheetUpdate, sender: self)
+        }
     }
     
     fileprivate func updateSaveBarButtonItemState() {
