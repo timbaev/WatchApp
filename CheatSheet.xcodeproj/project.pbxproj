@@ -53,6 +53,30 @@
 		CB3ED9052203102700821DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3ED9042203102700821DD5 /* Assets.xcassets */; };
 		CB3ED9092203102700821DD5 /* CheatSheetWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CB3ED8EF2203102300821DD5 /* CheatSheetWatch.app */; };
 		CB3ED919220311B400821DD5 /* CheatSheetRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED918220311B400821DD5 /* CheatSheetRowController.swift */; };
+		CB3ED920220346D100821DD5 /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED91F220346D100821DD5 /* WatchManager.swift */; };
+		CB3ED92222034A9200821DD5 /* DefaultWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED92122034A9200821DD5 /* DefaultWatchManager.swift */; };
+		CB3ED92322034EB800821DD5 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F462201A655002A8039 /* Log.swift */; };
+		CB7196EC2204389D00EB4FF2 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196EB2204389D00EB4FF2 /* WatchSessionManager.swift */; };
+		CB7196EE22043A2D00EB4FF2 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196ED22043A2D00EB4FF2 /* DataSource.swift */; };
+		CB7196F122043A7100EB4FF2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196F022043A7100EB4FF2 /* Item.swift */; };
+		CB7196F322043B0800EB4FF2 /* DataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196F222043B0800EB4FF2 /* DataSourceDelegate.swift */; };
+		CB7196F522043C5000EB4FF2 /* WeakArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196F422043C5000EB4FF2 /* WeakArray.swift */; };
+		CB7196F722043C7900EB4FF2 /* WeakBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196F622043C7900EB4FF2 /* WeakBox.swift */; };
+		CB7197002204469100EB4FF2 /* Invocable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FC2204469100EB4FF2 /* Invocable.swift */; };
+		CB7197012204469100EB4FF2 /* Invocable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FC2204469100EB4FF2 /* Invocable.swift */; };
+		CB7197022204469100EB4FF2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FD2204469100EB4FF2 /* Event.swift */; };
+		CB7197032204469100EB4FF2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FD2204469100EB4FF2 /* Event.swift */; };
+		CB7197042204469100EB4FF2 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FE2204469100EB4FF2 /* Disposable.swift */; };
+		CB7197052204469100EB4FF2 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FE2204469100EB4FF2 /* Disposable.swift */; };
+		CB7197062204469100EB4FF2 /* EventHandlerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FF2204469100EB4FF2 /* EventHandlerWrapper.swift */; };
+		CB7197072204469100EB4FF2 /* EventHandlerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FF2204469100EB4FF2 /* EventHandlerWrapper.swift */; };
+		CB71970922044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71970822044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift */; };
+		CB71970A22044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71970822044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift */; };
+		CB71970C2204550100EB4FF2 /* WatchSupportable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71970B2204550100EB4FF2 /* WatchSupportable.swift */; };
+		CB71970D2204550100EB4FF2 /* WatchSupportable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71970B2204550100EB4FF2 /* WatchSupportable.swift */; };
+		CB7197102204569400EB4FF2 /* WatchCheatSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71970F2204569400EB4FF2 /* WatchCheatSheet.swift */; };
+		CB7197112204569400EB4FF2 /* WatchCheatSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71970F2204569400EB4FF2 /* WatchCheatSheet.swift */; };
+		CB719712220456BD00EB4FF2 /* CheatSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8DF2202EA7C00821DD5 /* CheatSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +174,21 @@
 		CB3ED9062203102700821DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB3ED918220311B400821DD5 /* CheatSheetRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheetRowController.swift; sourceTree = "<group>"; };
 		CB3ED91A2203165800821DD5 /* CheatSheet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheatSheet.entitlements; sourceTree = "<group>"; };
+		CB3ED91F220346D100821DD5 /* WatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
+		CB3ED92122034A9200821DD5 /* DefaultWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWatchManager.swift; sourceTree = "<group>"; };
+		CB7196EB2204389D00EB4FF2 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		CB7196ED22043A2D00EB4FF2 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		CB7196F022043A7100EB4FF2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CB7196F222043B0800EB4FF2 /* DataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceDelegate.swift; sourceTree = "<group>"; };
+		CB7196F422043C5000EB4FF2 /* WeakArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakArray.swift; sourceTree = "<group>"; };
+		CB7196F622043C7900EB4FF2 /* WeakBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakBox.swift; sourceTree = "<group>"; };
+		CB7196FC2204469100EB4FF2 /* Invocable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invocable.swift; sourceTree = "<group>"; };
+		CB7196FD2204469100EB4FF2 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		CB7196FE2204469100EB4FF2 /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
+		CB7196FF2204469100EB4FF2 /* EventHandlerWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventHandlerWrapper.swift; sourceTree = "<group>"; };
+		CB71970822044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCSessionActivationStateExtensions.swift; sourceTree = "<group>"; };
+		CB71970B2204550100EB4FF2 /* WatchSupportable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSupportable.swift; sourceTree = "<group>"; };
+		CB71970F2204569400EB4FF2 /* WatchCheatSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCheatSheet.swift; sourceTree = "<group>"; };
 		FCBB89E9D5155919EC33671F /* Pods_CheatSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheatSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -299,10 +338,12 @@
 		CB099F4022019EE6002A8039 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				CB7196FB2204469100EB4FF2 /* Event */,
 				CB3ED8D02202E10300821DD5 /* Storage */,
 				CB099F4122019EED002A8039 /* Extensions */,
 				CB099F532201B23B002A8039 /* Protocols */,
 				CB099F482201A698002A8039 /* ViewControllers */,
+				CB3ED91E220346C400821DD5 /* Watch */,
 				CB099F462201A655002A8039 /* Log.swift */,
 			);
 			path = Tools;
@@ -314,6 +355,7 @@
 				CB099F5A2201B73C002A8039 /* CGRectExtension.swift */,
 				CB099F4222019F08002A8039 /* UITextViewExtensions.swift */,
 				CB099F662201CEA9002A8039 /* UIColorExtension.swift */,
+				CB71970822044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -336,6 +378,7 @@
 				CB099F542201B23B002A8039 /* KeyboardScrollableHandler.swift */,
 				CB099F552201B23B002A8039 /* DictionaryReceiver.swift */,
 				CB099F562201B23B002A8039 /* KeyboardHandler.swift */,
+				CB71970B2204550100EB4FF2 /* WatchSupportable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -431,7 +474,9 @@
 			isa = PBXGroup;
 			children = (
 				CB3ED9122203115400821DD5 /* Interfaces */,
+				CB71970E2204567300EB4FF2 /* Models */,
 				CB3ED9142203117400821DD5 /* Resources */,
+				CB7196EA2204388000EB4FF2 /* Tools */,
 				CB3ED9022203102600821DD5 /* ExtensionDelegate.swift */,
 				CB3ED9062203102700821DD5 /* Info.plist */,
 			);
@@ -485,6 +530,55 @@
 				CB3ED8F42203102600821DD5 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB3ED91E220346C400821DD5 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				CB3ED92122034A9200821DD5 /* DefaultWatchManager.swift */,
+				CB3ED91F220346D100821DD5 /* WatchManager.swift */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		CB7196EA2204388000EB4FF2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CB7196EF22043A6600EB4FF2 /* DataSource */,
+				CB7196EB2204389D00EB4FF2 /* WatchSessionManager.swift */,
+				CB7196F422043C5000EB4FF2 /* WeakArray.swift */,
+				CB7196F622043C7900EB4FF2 /* WeakBox.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		CB7196EF22043A6600EB4FF2 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				CB7196ED22043A2D00EB4FF2 /* DataSource.swift */,
+				CB7196F222043B0800EB4FF2 /* DataSourceDelegate.swift */,
+				CB7196F022043A7100EB4FF2 /* Item.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		CB7196FB2204469100EB4FF2 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				CB7196FC2204469100EB4FF2 /* Invocable.swift */,
+				CB7196FD2204469100EB4FF2 /* Event.swift */,
+				CB7196FE2204469100EB4FF2 /* Disposable.swift */,
+				CB7196FF2204469100EB4FF2 /* EventHandlerWrapper.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		CB71970E2204567300EB4FF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB71970F2204569400EB4FF2 /* WatchCheatSheet.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -678,9 +772,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB099F5B2201B73C002A8039 /* CGRectExtension.swift in Sources */,
+				CB71970C2204550100EB4FF2 /* WatchSupportable.swift in Sources */,
+				CB7197062204469100EB4FF2 /* EventHandlerWrapper.swift in Sources */,
 				CB099F6D2201D36B002A8039 /* CheatSheetDetailsViewController.swift in Sources */,
 				CB099F4E2201A698002A8039 /* LoggedPageViewController.swift in Sources */,
 				CB3ED8E52202ED2300821DD5 /* CheatSheetsManager.swift in Sources */,
+				CB7197002204469100EB4FF2 /* Invocable.swift in Sources */,
 				CB099F512201A698002A8039 /* LoggedNavigationController.swift in Sources */,
 				CB099F502201A698002A8039 /* LoggedViewController.swift in Sources */,
 				CB3ED8D92202E30F00821DD5 /* ObjectExtensions.swift in Sources */,
@@ -688,6 +785,7 @@
 				CB099F602201CDB6002A8039 /* EmptyStateView.swift in Sources */,
 				CB099F572201B23B002A8039 /* KeyboardScrollableHandler.swift in Sources */,
 				CB099F672201CEA9002A8039 /* UIColorExtension.swift in Sources */,
+				CB3ED92222034A9200821DD5 /* DefaultWatchManager.swift in Sources */,
 				CB099F20220191EE002A8039 /* AppDelegate.swift in Sources */,
 				CB099F4F2201A698002A8039 /* LoggedTableViewController.swift in Sources */,
 				CB099F592201B23B002A8039 /* KeyboardHandler.swift in Sources */,
@@ -695,14 +793,19 @@
 				CB099F522201A698002A8039 /* LoggedTabBarController.swift in Sources */,
 				CB099F652201CE3F002A8039 /* Colors.swift in Sources */,
 				CB3ED8DB2202E35100821DD5 /* RealmStorageContext.swift in Sources */,
+				CB7197102204569400EB4FF2 /* WatchCheatSheet.swift in Sources */,
 				CB3ED8E22202EAC200821DD5 /* DefaultCheatSheet.swift in Sources */,
 				CB099F472201A655002A8039 /* Log.swift in Sources */,
+				CB71970922044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift in Sources */,
 				CB099F37220194C0002A8039 /* CheatSheetsTableViewController.swift in Sources */,
 				CB3ED8E72202EDC900821DD5 /* DefaultCheatSheetsManager.swift in Sources */,
+				CB7197042204469100EB4FF2 /* Disposable.swift in Sources */,
 				CB099F582201B23B002A8039 /* DictionaryReceiver.swift in Sources */,
 				CB3ED8EC2202F24700821DD5 /* Managers.swift in Sources */,
 				CB3ED8D42202E18900821DD5 /* StorageContext.swift in Sources */,
 				CB3ED8EA2202F18E00821DD5 /* Models.swift in Sources */,
+				CB7197022204469100EB4FF2 /* Event.swift in Sources */,
+				CB3ED920220346D100821DD5 /* WatchManager.swift in Sources */,
 				CB099F452201A458002A8039 /* CreateCheatSheetViewController.swift in Sources */,
 				CB3ED8D62202E1D800821DD5 /* Storable.swift in Sources */,
 				CB099F632201CDEC002A8039 /* Fonts.swift in Sources */,
@@ -716,8 +819,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB7196EE22043A2D00EB4FF2 /* DataSource.swift in Sources */,
+				CB71970D2204550100EB4FF2 /* WatchSupportable.swift in Sources */,
+				CB7196F522043C5000EB4FF2 /* WeakArray.swift in Sources */,
+				CB7196EC2204389D00EB4FF2 /* WatchSessionManager.swift in Sources */,
 				CB3ED919220311B400821DD5 /* CheatSheetRowController.swift in Sources */,
+				CB71970A22044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift in Sources */,
+				CB7197072204469100EB4FF2 /* EventHandlerWrapper.swift in Sources */,
+				CB7196F722043C7900EB4FF2 /* WeakBox.swift in Sources */,
+				CB7197052204469100EB4FF2 /* Disposable.swift in Sources */,
+				CB7196F322043B0800EB4FF2 /* DataSourceDelegate.swift in Sources */,
+				CB7196F122043A7100EB4FF2 /* Item.swift in Sources */,
 				CB3ED9032203102600821DD5 /* ExtensionDelegate.swift in Sources */,
+				CB3ED92322034EB800821DD5 /* Log.swift in Sources */,
+				CB7197012204469100EB4FF2 /* Invocable.swift in Sources */,
+				CB7197112204569400EB4FF2 /* WatchCheatSheet.swift in Sources */,
+				CB719712220456BD00EB4FF2 /* CheatSheet.swift in Sources */,
+				CB7197032204469100EB4FF2 /* Event.swift in Sources */,
 				CB3ED9012203102600821DD5 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

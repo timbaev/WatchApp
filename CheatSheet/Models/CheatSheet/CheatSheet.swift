@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol CheatSheet: AnyObject {
+public protocol CheatSheet: AnyObject, WatchSupportable {
     
     // MARK: - Instance Properties
     
@@ -16,4 +16,6 @@ protocol CheatSheet: AnyObject {
     
     var title: String { get set }
     var content: String { get set }
+    
+    var createdAt: Date { get set }
 }

@@ -13,4 +13,8 @@ enum Managers {
     // MARK: - Type Properties
     
     static let cheatSheetManager: CheatSheetsManager = DefaultCheatSheetsManager<DefaultCheatSheet>(storageContext: Models.storageContext)
+    
+    // MARK: -
+    
+    static let watchManager: WatchManager = DefaultWatchManager()
 }

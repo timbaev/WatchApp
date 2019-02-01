@@ -17,9 +17,9 @@
                         <table alignment="left" id="kJz-mb-ORB">
                             <items>
                                 <tableRow identifier="CheatSheetRow" id="av4-s6-9tM" customClass="CheatSheetRowController" customModule="CheatSheetWatch_Extension">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="4" id="quZ-pC-G84">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="8" id="quZ-pC-G84">
                                         <items>
-                                            <label width="1" alignment="left" text="Title" textAlignment="left" id="1WV-E2-acj">
+                                            <label width="1" alignment="left" text="Title" textAlignment="left" numberOfLines="0" id="1WV-E2-acj">
                                                 <fontDescription key="font" type="system" pointSize="16"/>
                                             </label>
                                         </items>

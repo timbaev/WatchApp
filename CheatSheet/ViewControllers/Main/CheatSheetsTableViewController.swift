@@ -82,6 +82,8 @@ class CheatSheetsTableViewController: LoggedViewController {
             self.tableView.reloadData()
             
             self.updateEmptyState()
+            
+            Managers.watchManager.sendDataArray(["cheatSheets": cheatSheets])
         }
     }
     

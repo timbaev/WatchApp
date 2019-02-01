@@ -8,6 +8,7 @@
 
 import WatchKit
 import Foundation
+import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
     
@@ -23,4 +24,58 @@ class InterfaceController: WKInterfaceController {
     // MARK: - Instance Properties
 
     @IBOutlet fileprivate weak var table: WKInterfaceTable!
+    
+    // MARK: -
+    
+    fileprivate var dataSourceChangeHandler: Disposable?
+    
+    fileprivate var watchSession: WCSession?
+    
+    fileprivate var cheatSheets: [CheatSheet] = []
+    
+    // MARK: - Instance Methods
+    
+    fileprivate func configure(cheatSheetRowController rowController: CheatSheetRowController, with cheatSheet: CheatSheet) {
+        rowController.title = cheatSheet.title
+    }
+    
+    // MARK: -
+    
+    fileprivate func apply(cheatsSheets: [CheatSheet]) {
+        Log.high("apply(cheatSheets: \(cheatsSheets.count))", from: self)
+        
+        self.cheatSheets = cheatsSheets
+        
+        self.table.setNumberOfRows(cheatsSheets.count, withRowType: Constants.tableRowType)
+        
+        for (index, cheatSheet) in cheatsSheets.enumerated() {
+            guard let rowController = self.table.rowController(at: index) as? CheatSheetRowController else {
+                continue
+            }
+            
+            self.configure(cheatSheetRowController: rowController, with: cheatSheet)
+        }
+    }
+    
+    // MARK: - WKInterfaceController
+    
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
+        
+        self.dataSourceChangeHandler = WatchSessionManager.shared.subscribeToDataSourceChangeEvents(target: self, handler: { dataSource in
+            switch dataSource.item {
+            case .cheatSheets(let cheatSheets):
+                self.apply(cheatsSheets: cheatSheets)
+                
+            case .unknown:
+                Log.high("Receive unknown item", from: self)
+            }
+        })
+    }
+    
+    override func didDeactivate() {
+        self.dataSourceChangeHandler?.dispose()
+        
+        super.didDeactivate()
+    }
 }

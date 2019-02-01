@@ -25,4 +25,16 @@ class DefaultCheatSheet: Object {
 
 // MARK: - CheatSheet
 
-extension DefaultCheatSheet: CheatSheet { }
+extension DefaultCheatSheet: CheatSheet {
+    
+    // MARK: - Instance Properties
+    
+    var data: [String : Any] {
+        return [
+            "id": self.id,
+            "title": self.title,
+            "content": self.content,
+            "createdAt": self.createdAt
+        ]
+    }
+}
