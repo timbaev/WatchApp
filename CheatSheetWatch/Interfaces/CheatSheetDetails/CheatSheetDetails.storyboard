@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--CheatSheetDetails-->
+        <scene sceneID="jYr-HR-IDY">
+            <objects>
+                <controller identifier="CheatSheetDetails" id="Hyd-V9-WPb" customClass="CheatSheetDetailsInterfaceController" customModule="CheatSheetWatch_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="4" id="q9c-NE-b4n">
+                            <items>
+                                <label alignment="left" text="Title" id="Y7Y-h9-JLD">
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                                <separator alignment="left" id="Pic-zg-XZo">
+                                    <color key="color" red="0.97647058819999999" green="0.3294117647" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <label alignment="left" text="Content" id="Txz-xj-Fsx">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Txz-xj-Fsx" id="4DV-e8-JZn"/>
+                        <outlet property="titleLabel" destination="Y7Y-h9-JLD" id="D3a-cZ-Tjy"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-362" y="191"/>
+        </scene>
+    </scenes>
+</document>

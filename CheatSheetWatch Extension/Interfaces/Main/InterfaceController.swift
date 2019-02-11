@@ -21,6 +21,15 @@ class InterfaceController: WKInterfaceController {
         static let tableRowType = "CheatSheetRow"
     }
     
+    // MARK: -
+    
+    fileprivate enum Controllers {
+        
+        // MARK: - Type Properties
+        
+        static let cheatSheetDetails = "CheatSheetDetails"
+    }
+    
     // MARK: - Instance Properties
 
     @IBOutlet fileprivate weak var table: WKInterfaceTable!
@@ -31,10 +40,36 @@ class InterfaceController: WKInterfaceController {
     
     fileprivate var cheatSheets: [CheatSheet] = []
     
+    // MARK: - Initializers
+    
+    deinit {
+        self.unsubscribeFromDataSourceChangeEvents()
+    }
+    
     // MARK: - Instance Methods
     
     fileprivate func configure(cheatSheetRowController rowController: CheatSheetRowController, with cheatSheet: CheatSheet) {
         rowController.title = cheatSheet.title
+    }
+    
+    // MARK: -
+    
+    fileprivate func subscribeToDataSourceChangeEvents() {
+        self.unsubscribeFromDataSourceChangeEvents()
+        
+        WatchSessionManager.shared.dataSourceDidChangedEvent.connect(self, handler: { [weak self] dataSource in
+            switch dataSource.item {
+            case .cheatSheets(let cheatSheets):
+                self?.apply(cheatsSheets: cheatSheets)
+                
+            case .unknown:
+                Log.high("Receive unknown item", from: self)
+            }
+        })
+    }
+    
+    fileprivate func unsubscribeFromDataSourceChangeEvents() {
+        WatchSessionManager.shared.dataSourceDidChangedEvent.disconnect(self)
     }
     
     // MARK: -
@@ -60,20 +95,12 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        WatchSessionManager.shared.dataSourceDidChangedEvent.connect(self, handler: { [weak self] dataSource in
-            switch dataSource.item {
-            case .cheatSheets(let cheatSheets):
-                self?.apply(cheatsSheets: cheatSheets)
-                
-            case .unknown:
-                Log.high("Receive unknown item", from: self)
-            }
-        })
+        self.subscribeToDataSourceChangeEvents()
     }
     
-    override func didDeactivate() {
-        WatchSessionManager.shared.dataSourceDidChangedEvent.disconnect(self)
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        let cheatSheet = self.cheatSheets[rowIndex]
         
-        super.didDeactivate()
+        self.presentController(withName: Controllers.cheatSheetDetails, context: cheatSheet)
     }
 }

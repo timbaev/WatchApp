@@ -57,12 +57,12 @@
 		CB3ED920220346D100821DD5 /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED91F220346D100821DD5 /* WatchManager.swift */; };
 		CB3ED92222034A9200821DD5 /* DefaultWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED92122034A9200821DD5 /* DefaultWatchManager.swift */; };
 		CB3ED92322034EB800821DD5 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F462201A655002A8039 /* Log.swift */; };
+		CB598A002211849000D6352B /* CheatSheetDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5989FF2211849000D6352B /* CheatSheetDetails.storyboard */; };
+		CB598A032211854D00D6352B /* CheatSheetDetailsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB598A022211854D00D6352B /* CheatSheetDetailsInterfaceController.swift */; };
 		CB7196EC2204389D00EB4FF2 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196EB2204389D00EB4FF2 /* WatchSessionManager.swift */; };
 		CB7196EE22043A2D00EB4FF2 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196ED22043A2D00EB4FF2 /* DataSource.swift */; };
 		CB7196F122043A7100EB4FF2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196F022043A7100EB4FF2 /* Item.swift */; };
 		CB7196F322043B0800EB4FF2 /* DataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196F222043B0800EB4FF2 /* DataSourceDelegate.swift */; };
-		CB7196F522043C5000EB4FF2 /* WeakArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196F422043C5000EB4FF2 /* WeakArray.swift */; };
-		CB7196F722043C7900EB4FF2 /* WeakBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196F622043C7900EB4FF2 /* WeakBox.swift */; };
 		CB71970922044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71970822044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift */; };
 		CB71970A22044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71970822044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift */; };
 		CB71970C2204550100EB4FF2 /* WatchSupportable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71970B2204550100EB4FF2 /* WatchSupportable.swift */; };
@@ -172,12 +172,12 @@
 		CB3ED91A2203165800821DD5 /* CheatSheet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheatSheet.entitlements; sourceTree = "<group>"; };
 		CB3ED91F220346D100821DD5 /* WatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
 		CB3ED92122034A9200821DD5 /* DefaultWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWatchManager.swift; sourceTree = "<group>"; };
+		CB5989FF2211849000D6352B /* CheatSheetDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheatSheetDetails.storyboard; sourceTree = "<group>"; };
+		CB598A022211854D00D6352B /* CheatSheetDetailsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheetDetailsInterfaceController.swift; sourceTree = "<group>"; };
 		CB7196EB2204389D00EB4FF2 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		CB7196ED22043A2D00EB4FF2 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		CB7196F022043A7100EB4FF2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CB7196F222043B0800EB4FF2 /* DataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceDelegate.swift; sourceTree = "<group>"; };
-		CB7196F422043C5000EB4FF2 /* WeakArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakArray.swift; sourceTree = "<group>"; };
-		CB7196F622043C7900EB4FF2 /* WeakBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakBox.swift; sourceTree = "<group>"; };
 		CB71970822044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCSessionActivationStateExtensions.swift; sourceTree = "<group>"; };
 		CB71970B2204550100EB4FF2 /* WatchSupportable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSupportable.swift; sourceTree = "<group>"; };
 		CB71970F2204569400EB4FF2 /* WatchCheatSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCheatSheet.swift; sourceTree = "<group>"; };
@@ -491,6 +491,7 @@
 		CB3ED9122203115400821DD5 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				CB598A012211853300D6352B /* CheatSheetDetails */,
 				CB3ED9132203115C00821DD5 /* Main */,
 			);
 			path = Interfaces;
@@ -516,6 +517,7 @@
 		CB3ED9152203118400821DD5 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				CB5989FC2211843C00D6352B /* CheatSheetDetails */,
 				CB3ED9162203118A00821DD5 /* Main */,
 			);
 			path = Interfaces;
@@ -546,13 +548,27 @@
 			path = Watch;
 			sourceTree = "<group>";
 		};
+		CB5989FC2211843C00D6352B /* CheatSheetDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CB5989FF2211849000D6352B /* CheatSheetDetails.storyboard */,
+			);
+			path = CheatSheetDetails;
+			sourceTree = "<group>";
+		};
+		CB598A012211853300D6352B /* CheatSheetDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CB598A022211854D00D6352B /* CheatSheetDetailsInterfaceController.swift */,
+			);
+			path = CheatSheetDetails;
+			sourceTree = "<group>";
+		};
 		CB7196EA2204388000EB4FF2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 				CB7196EF22043A6600EB4FF2 /* DataSource */,
 				CB7196EB2204389D00EB4FF2 /* WatchSessionManager.swift */,
-				CB7196F422043C5000EB4FF2 /* WeakArray.swift */,
-				CB7196F622043C7900EB4FF2 /* WeakBox.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -699,6 +715,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB598A002211849000D6352B /* CheatSheetDetails.storyboard in Resources */,
 				CB3ED8F52203102600821DD5 /* Assets.xcassets in Resources */,
 				CB3ED8F32203102400821DD5 /* Interface.storyboard in Resources */,
 			);
@@ -861,13 +878,12 @@
 			files = (
 				CB7196EE22043A2D00EB4FF2 /* DataSource.swift in Sources */,
 				CB71970D2204550100EB4FF2 /* WatchSupportable.swift in Sources */,
-				CB7196F522043C5000EB4FF2 /* WeakArray.swift in Sources */,
 				CB7196EC2204389D00EB4FF2 /* WatchSessionManager.swift in Sources */,
 				CB3ED919220311B400821DD5 /* CheatSheetRowController.swift in Sources */,
 				CB71970A22044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift in Sources */,
-				CB7196F722043C7900EB4FF2 /* WeakBox.swift in Sources */,
 				CB7196F322043B0800EB4FF2 /* DataSourceDelegate.swift in Sources */,
 				CB7196F122043A7100EB4FF2 /* Item.swift in Sources */,
+				CB598A032211854D00D6352B /* CheatSheetDetailsInterfaceController.swift in Sources */,
 				CB3ED9032203102600821DD5 /* ExtensionDelegate.swift in Sources */,
 				CB3ED92322034EB800821DD5 /* Log.swift in Sources */,
 				CB7197112204569400EB4FF2 /* WatchCheatSheet.swift in Sources */,
