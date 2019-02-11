@@ -84,6 +84,12 @@ class DefaultCheatSheetsManager<Object>: CheatSheetsManager, StorageContextObser
         try? self.storageContext.update(block: block)
     }
     
+    func delete(cheatSheet: CheatSheet) {
+        if let cheatSheet = cheatSheet as? Object {
+            try? self.storageContext.delete(object: cheatSheet)
+        }
+    }
+    
     func startObserving() {
         self.storageContext.addObserver(self, to: Object.self)
     }

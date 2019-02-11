@@ -29,6 +29,7 @@ protocol CheatSheetsManager {
     
     func save(cheatSheet: CheatSheet)
     func update(block: @escaping () -> ())
+    func delete(cheatSheet: CheatSheet)
     
     func fetch(completion: ([CheatSheet]) -> ())
     
