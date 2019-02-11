@@ -33,6 +33,7 @@ class InterfaceController: WKInterfaceController {
     // MARK: - Instance Properties
 
     @IBOutlet fileprivate weak var table: WKInterfaceTable!
+    @IBOutlet fileprivate weak var noDataLabel: WKInterfaceLabel!
     
     // MARK: -
     
@@ -78,6 +79,8 @@ class InterfaceController: WKInterfaceController {
         Log.high("apply(cheatSheets: \(cheatsSheets.count))", from: self)
         
         self.cheatSheets = cheatsSheets
+        
+        self.noDataLabel.setHidden(!cheatsSheets.isEmpty)
         
         self.table.setNumberOfRows(cheatsSheets.count, withRowType: Constants.tableRowType)
         

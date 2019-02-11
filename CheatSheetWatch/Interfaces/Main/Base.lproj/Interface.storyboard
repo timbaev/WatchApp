@@ -30,8 +30,12 @@
                                 </tableRow>
                             </items>
                         </table>
+                        <label width="1" alignment="left" text="No cheat sheets yet" textAlignment="center" numberOfLines="0" id="Kun-L1-ZRr">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
                     </items>
                     <connections>
+                        <outlet property="noDataLabel" destination="Kun-L1-ZRr" id="ASv-Yt-jBU"/>
                         <outlet property="table" destination="kJz-mb-ORB" id="MpH-TN-HfH"/>
                     </connections>
                 </controller>
