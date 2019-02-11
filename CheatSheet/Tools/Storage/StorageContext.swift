@@ -19,4 +19,7 @@ protocol StorageContext {
     func deleteAll<T: Storable>(_ model: T.Type) throws
     func reset() throws
     func fetch<T: Storable>(_ model: T.Type, predication: NSPredicate?, sorted: Sorted?, completion: ([T]) -> ())
+    
+    func addObserver<T>(_ observer: StorageContextObserver, to model: T.Type) where T : Storable
+    func removeObserver(_ observer: StorageContextObserver)
 }

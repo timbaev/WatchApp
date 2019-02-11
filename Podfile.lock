@@ -1,4 +1,9 @@
 PODS:
+  - AurorKit (0.0.3):
+    - AurorKit/Events (= 0.0.3)
+    - AurorKit/Extensions (= 0.0.3)
+  - AurorKit/Events (0.0.3)
+  - AurorKit/Extensions (0.0.3)
   - Realm (3.13.1):
     - Realm/Headers (= 3.13.1)
   - Realm/Headers (3.13.1)
@@ -6,17 +11,20 @@ PODS:
     - Realm (= 3.13.1)
 
 DEPENDENCIES:
-  - RealmSwift (~> 3.13.1)
+  - AurorKit
+  - RealmSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AurorKit
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
+  AurorKit: 4304c2a4d99a041cd5e0e68cc0e362bb27af27b6
   Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
 
-PODFILE CHECKSUM: 702964321cce181f48dd98175c7a303369be9f72
+PODFILE CHECKSUM: f67891bc61507dab4de330432899732e1f770e81
 
 COCOAPODS: 1.5.3

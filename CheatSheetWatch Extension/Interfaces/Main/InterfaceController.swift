@@ -27,8 +27,6 @@ class InterfaceController: WKInterfaceController {
     
     // MARK: -
     
-    fileprivate var dataSourceChangeHandler: Disposable?
-    
     fileprivate var watchSession: WCSession?
     
     fileprivate var cheatSheets: [CheatSheet] = []
@@ -62,10 +60,10 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        self.dataSourceChangeHandler = WatchSessionManager.shared.subscribeToDataSourceChangeEvents(target: self, handler: { dataSource in
+        WatchSessionManager.shared.dataSourceDidChangedEvent.connect(self, handler: { [weak self] dataSource in
             switch dataSource.item {
             case .cheatSheets(let cheatSheets):
-                self.apply(cheatsSheets: cheatSheets)
+                self?.apply(cheatsSheets: cheatSheets)
                 
             case .unknown:
                 Log.high("Receive unknown item", from: self)
@@ -74,7 +72,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func didDeactivate() {
-        self.dataSourceChangeHandler?.dispose()
+        WatchSessionManager.shared.dataSourceDidChangedEvent.disconnect(self)
         
         super.didDeactivate()
     }

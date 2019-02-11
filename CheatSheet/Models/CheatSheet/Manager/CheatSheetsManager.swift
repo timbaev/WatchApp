@@ -7,12 +7,18 @@
 //
 
 import Foundation
+import AurorKit
 
 protocol CheatSheetsManager {
     
     // MARK: - Instance Properties
     
     var storageContext: StorageContext { get }
+    
+    var objectsRemovedEvent: Event<[Int]> { get }
+    var objectsAppendedEvent: Event<[CheatSheet]> { get }
+    var objectsUpdatedEvent: Event<[CheatSheet]> { get }
+    var objectsChangedEvent: Event<[CheatSheet]> { get }
     
     // MARK: - Instance Methods
     
@@ -25,4 +31,7 @@ protocol CheatSheetsManager {
     func update(block: @escaping () -> ())
     
     func fetch(completion: ([CheatSheet]) -> ())
+    
+    func startObserving()
+    func stopObserving()
 }

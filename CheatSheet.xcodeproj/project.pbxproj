@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48AFC707843900C8F9C440C3 /* Pods_CheatSheetWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4979CEED77E8E7BB5F4ED6 /* Pods_CheatSheetWatch_Extension.framework */; };
 		6B346BCE043C59D805EAC3C5 /* Pods_CheatSheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBB89E9D5155919EC33671F /* Pods_CheatSheet.framework */; };
 		CB099F20220191EE002A8039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB099F1F220191EE002A8039 /* AppDelegate.swift */; };
 		CB099F25220191EE002A8039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB099F23220191EE002A8039 /* Main.storyboard */; };
@@ -62,14 +63,6 @@
 		CB7196F322043B0800EB4FF2 /* DataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196F222043B0800EB4FF2 /* DataSourceDelegate.swift */; };
 		CB7196F522043C5000EB4FF2 /* WeakArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196F422043C5000EB4FF2 /* WeakArray.swift */; };
 		CB7196F722043C7900EB4FF2 /* WeakBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196F622043C7900EB4FF2 /* WeakBox.swift */; };
-		CB7197002204469100EB4FF2 /* Invocable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FC2204469100EB4FF2 /* Invocable.swift */; };
-		CB7197012204469100EB4FF2 /* Invocable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FC2204469100EB4FF2 /* Invocable.swift */; };
-		CB7197022204469100EB4FF2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FD2204469100EB4FF2 /* Event.swift */; };
-		CB7197032204469100EB4FF2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FD2204469100EB4FF2 /* Event.swift */; };
-		CB7197042204469100EB4FF2 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FE2204469100EB4FF2 /* Disposable.swift */; };
-		CB7197052204469100EB4FF2 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FE2204469100EB4FF2 /* Disposable.swift */; };
-		CB7197062204469100EB4FF2 /* EventHandlerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FF2204469100EB4FF2 /* EventHandlerWrapper.swift */; };
-		CB7197072204469100EB4FF2 /* EventHandlerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7196FF2204469100EB4FF2 /* EventHandlerWrapper.swift */; };
 		CB71970922044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71970822044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift */; };
 		CB71970A22044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71970822044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift */; };
 		CB71970C2204550100EB4FF2 /* WatchSupportable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71970B2204550100EB4FF2 /* WatchSupportable.swift */; };
@@ -77,6 +70,7 @@
 		CB7197102204569400EB4FF2 /* WatchCheatSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71970F2204569400EB4FF2 /* WatchCheatSheet.swift */; };
 		CB7197112204569400EB4FF2 /* WatchCheatSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71970F2204569400EB4FF2 /* WatchCheatSheet.swift */; };
 		CB719712220456BD00EB4FF2 /* CheatSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED8DF2202EA7C00821DD5 /* CheatSheet.swift */; };
+		CB7197142204699C00EB4FF2 /* StorageContextObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7197132204699C00EB4FF2 /* StorageContextObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,7 +117,9 @@
 
 /* Begin PBXFileReference section */
 		464279C7B6257188A23B4227 /* Pods-CheatSheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheatSheet.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheatSheet/Pods-CheatSheet.release.xcconfig"; sourceTree = "<group>"; };
+		75EA8857D12694C265F37870 /* Pods-CheatSheetWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheatSheetWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheatSheetWatch Extension/Pods-CheatSheetWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		95EA639FDDBC8B3096C5A410 /* Pods-CheatSheet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheatSheet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheatSheet/Pods-CheatSheet.debug.xcconfig"; sourceTree = "<group>"; };
+		AC4DB4CC80DA88DEF6D65255 /* Pods-CheatSheetWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheatSheetWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheatSheetWatch Extension/Pods-CheatSheetWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		CB099F1C220191EE002A8039 /* CheatSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheatSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB099F1F220191EE002A8039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB099F24220191EE002A8039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -182,17 +178,22 @@
 		CB7196F222043B0800EB4FF2 /* DataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceDelegate.swift; sourceTree = "<group>"; };
 		CB7196F422043C5000EB4FF2 /* WeakArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakArray.swift; sourceTree = "<group>"; };
 		CB7196F622043C7900EB4FF2 /* WeakBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakBox.swift; sourceTree = "<group>"; };
-		CB7196FC2204469100EB4FF2 /* Invocable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invocable.swift; sourceTree = "<group>"; };
-		CB7196FD2204469100EB4FF2 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		CB7196FE2204469100EB4FF2 /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
-		CB7196FF2204469100EB4FF2 /* EventHandlerWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventHandlerWrapper.swift; sourceTree = "<group>"; };
 		CB71970822044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCSessionActivationStateExtensions.swift; sourceTree = "<group>"; };
 		CB71970B2204550100EB4FF2 /* WatchSupportable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSupportable.swift; sourceTree = "<group>"; };
 		CB71970F2204569400EB4FF2 /* WatchCheatSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCheatSheet.swift; sourceTree = "<group>"; };
+		CB7197132204699C00EB4FF2 /* StorageContextObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageContextObserver.swift; sourceTree = "<group>"; };
+		FB4979CEED77E8E7BB5F4ED6 /* Pods_CheatSheetWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheatSheetWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBB89E9D5155919EC33671F /* Pods_CheatSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheatSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3BE0044CA42C5AE5F68E43E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB099F19220191EE002A8039 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,6 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48AFC707843900C8F9C440C3 /* Pods_CheatSheetWatch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +218,8 @@
 			children = (
 				95EA639FDDBC8B3096C5A410 /* Pods-CheatSheet.debug.xcconfig */,
 				464279C7B6257188A23B4227 /* Pods-CheatSheet.release.xcconfig */,
+				75EA8857D12694C265F37870 /* Pods-CheatSheetWatch Extension.debug.xcconfig */,
+				AC4DB4CC80DA88DEF6D65255 /* Pods-CheatSheetWatch Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -224,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				FCBB89E9D5155919EC33671F /* Pods_CheatSheet.framework */,
+				FB4979CEED77E8E7BB5F4ED6 /* Pods_CheatSheetWatch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -338,7 +343,6 @@
 		CB099F4022019EE6002A8039 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				CB7196FB2204469100EB4FF2 /* Event */,
 				CB3ED8D02202E10300821DD5 /* Storage */,
 				CB099F4122019EED002A8039 /* Extensions */,
 				CB099F532201B23B002A8039 /* Protocols */,
@@ -428,6 +432,7 @@
 				CB3ED8D52202E1D800821DD5 /* Storable.swift */,
 				CB3ED8D12202E11D00821DD5 /* Sorted.swift */,
 				CB3ED8D32202E18900821DD5 /* StorageContext.swift */,
+				CB7197132204699C00EB4FF2 /* StorageContextObserver.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -562,17 +567,6 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
-		CB7196FB2204469100EB4FF2 /* Event */ = {
-			isa = PBXGroup;
-			children = (
-				CB7196FC2204469100EB4FF2 /* Invocable.swift */,
-				CB7196FD2204469100EB4FF2 /* Event.swift */,
-				CB7196FE2204469100EB4FF2 /* Disposable.swift */,
-				CB7196FF2204469100EB4FF2 /* EventHandlerWrapper.swift */,
-			);
-			path = Event;
-			sourceTree = "<group>";
-		};
 		CB71970E2204567300EB4FF2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -592,8 +586,8 @@
 				CB099F18220191EE002A8039 /* Sources */,
 				CB099F19220191EE002A8039 /* Frameworks */,
 				CB099F1A220191EE002A8039 /* Resources */,
-				767AA9F7BDE8E3CEB605B3A9 /* [CP] Embed Pods Frameworks */,
 				CB3ED9112203102700821DD5 /* Embed Watch Content */,
+				674C8B4D04A3A25B32BCF189 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -611,6 +605,7 @@
 			buildPhases = (
 				CB3ED8ED2203102300821DD5 /* Resources */,
 				CB3ED90D2203102700821DD5 /* Embed App Extensions */,
+				3BE0044CA42C5AE5F68E43E2 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -626,9 +621,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB3ED90A2203102700821DD5 /* Build configuration list for PBXNativeTarget "CheatSheetWatch Extension" */;
 			buildPhases = (
+				83AB8681F586A0626237D558 /* [CP] Check Pods Manifest.lock */,
 				CB3ED8F72203102600821DD5 /* Sources */,
 				CB3ED8F82203102600821DD5 /* Frameworks */,
 				CB3ED8F92203102600821DD5 /* Resources */,
+				F874BA01F428936B88172DF1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -740,7 +737,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		767AA9F7BDE8E3CEB605B3A9 /* [CP] Embed Pods Frameworks */ = {
+		674C8B4D04A3A25B32BCF189 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -749,6 +746,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CheatSheet/Pods-CheatSheet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AurorKit-iOS/AurorKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
@@ -756,12 +754,57 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AurorKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheatSheet/Pods-CheatSheet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83AB8681F586A0626237D558 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheatSheetWatch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F874BA01F428936B88172DF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CheatSheetWatch Extension/Pods-CheatSheetWatch Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AurorKit-watchOS/AurorKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AurorKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheatSheetWatch Extension/Pods-CheatSheetWatch Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -773,11 +816,9 @@
 			files = (
 				CB099F5B2201B73C002A8039 /* CGRectExtension.swift in Sources */,
 				CB71970C2204550100EB4FF2 /* WatchSupportable.swift in Sources */,
-				CB7197062204469100EB4FF2 /* EventHandlerWrapper.swift in Sources */,
 				CB099F6D2201D36B002A8039 /* CheatSheetDetailsViewController.swift in Sources */,
 				CB099F4E2201A698002A8039 /* LoggedPageViewController.swift in Sources */,
 				CB3ED8E52202ED2300821DD5 /* CheatSheetsManager.swift in Sources */,
-				CB7197002204469100EB4FF2 /* Invocable.swift in Sources */,
 				CB099F512201A698002A8039 /* LoggedNavigationController.swift in Sources */,
 				CB099F502201A698002A8039 /* LoggedViewController.swift in Sources */,
 				CB3ED8D92202E30F00821DD5 /* ObjectExtensions.swift in Sources */,
@@ -799,15 +840,14 @@
 				CB71970922044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift in Sources */,
 				CB099F37220194C0002A8039 /* CheatSheetsTableViewController.swift in Sources */,
 				CB3ED8E72202EDC900821DD5 /* DefaultCheatSheetsManager.swift in Sources */,
-				CB7197042204469100EB4FF2 /* Disposable.swift in Sources */,
 				CB099F582201B23B002A8039 /* DictionaryReceiver.swift in Sources */,
 				CB3ED8EC2202F24700821DD5 /* Managers.swift in Sources */,
 				CB3ED8D42202E18900821DD5 /* StorageContext.swift in Sources */,
 				CB3ED8EA2202F18E00821DD5 /* Models.swift in Sources */,
-				CB7197022204469100EB4FF2 /* Event.swift in Sources */,
 				CB3ED920220346D100821DD5 /* WatchManager.swift in Sources */,
 				CB099F452201A458002A8039 /* CreateCheatSheetViewController.swift in Sources */,
 				CB3ED8D62202E1D800821DD5 /* Storable.swift in Sources */,
+				CB7197142204699C00EB4FF2 /* StorageContextObserver.swift in Sources */,
 				CB099F632201CDEC002A8039 /* Fonts.swift in Sources */,
 				CB3ED8E02202EA7C00821DD5 /* CheatSheet.swift in Sources */,
 				CB3ED8DD2202E3DE00821DD5 /* ConfigurationType.swift in Sources */,
@@ -825,17 +865,13 @@
 				CB7196EC2204389D00EB4FF2 /* WatchSessionManager.swift in Sources */,
 				CB3ED919220311B400821DD5 /* CheatSheetRowController.swift in Sources */,
 				CB71970A22044E4D00EB4FF2 /* WCSessionActivationStateExtensions.swift in Sources */,
-				CB7197072204469100EB4FF2 /* EventHandlerWrapper.swift in Sources */,
 				CB7196F722043C7900EB4FF2 /* WeakBox.swift in Sources */,
-				CB7197052204469100EB4FF2 /* Disposable.swift in Sources */,
 				CB7196F322043B0800EB4FF2 /* DataSourceDelegate.swift in Sources */,
 				CB7196F122043A7100EB4FF2 /* Item.swift in Sources */,
 				CB3ED9032203102600821DD5 /* ExtensionDelegate.swift in Sources */,
 				CB3ED92322034EB800821DD5 /* Log.swift in Sources */,
-				CB7197012204469100EB4FF2 /* Invocable.swift in Sources */,
 				CB7197112204569400EB4FF2 /* WatchCheatSheet.swift in Sources */,
 				CB719712220456BD00EB4FF2 /* CheatSheet.swift in Sources */,
-				CB7197032204469100EB4FF2 /* Event.swift in Sources */,
 				CB3ED9012203102600821DD5 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1039,6 +1075,7 @@
 		};
 		CB3ED90B2203102700821DD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75EA8857D12694C265F37870 /* Pods-CheatSheetWatch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -1061,6 +1098,7 @@
 		};
 		CB3ED90C2203102700821DD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC4DB4CC80DA88DEF6D65255 /* Pods-CheatSheetWatch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;

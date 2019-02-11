@@ -37,7 +37,15 @@ class CheatSheetsTableViewController: LoggedViewController {
     
     // MARK: -
     
+    fileprivate(set) var shouldApplyData = true
+    
     fileprivate var cheatSheets: [CheatSheet] = []
+    
+    // MARK: - Initializers
+    
+    deinit {
+        self.unsubscribeFromCheatSheetsEvents()
+    }
     
     // MARK: - Instance Methods
     
@@ -47,6 +55,42 @@ class CheatSheetsTableViewController: LoggedViewController {
     
     @IBAction fileprivate func onUpdateCheatSheetFinished(segue: UIStoryboardSegue) {
         Log.high("onUpdateCheatSheetFinished(segue: \(String(describing: segue.identifier)))", from: self)
+    }
+    
+    // MARK: -
+    
+    fileprivate func subscribeToCheatSheetsEvents() {
+        self.unsubscribeFromCheatSheetsEvents()
+        
+        Managers.cheatSheetManager.objectsChangedEvent.connect(self, handler: { [weak self] cheatSheets in
+            self?.apply(cheatSheets: cheatSheets)
+        })
+        
+        Managers.cheatSheetManager.startObserving()
+    }
+    
+    fileprivate func unsubscribeFromCheatSheetsEvents() {
+        Managers.cheatSheetManager.objectsChangedEvent.disconnect(self)
+    }
+    
+    // MARK: -
+    
+    fileprivate func apply(cheatSheets: [CheatSheet]) {
+        Log.high("apply(cheatSheets: \(cheatSheets.count))", from: self)
+        
+        self.cheatSheets = cheatSheets
+        
+        if self.isViewLoaded {
+            self.tableView.reloadData()
+            
+            self.updateEmptyState()
+            
+            Managers.watchManager.sendDataArray(["cheatSheets": cheatSheets])
+            
+            self.shouldApplyData = false
+        } else {
+            self.shouldApplyData = true
+        }
     }
     
     // MARK: -
@@ -70,20 +114,20 @@ class CheatSheetsTableViewController: LoggedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.shouldApplyData = true
+        
         self.tableView.tableFooterView = UIView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        Managers.cheatSheetManager.fetch { [unowned self] cheatSheets in
-            self.cheatSheets = cheatSheets
-            
-            self.tableView.reloadData()
-            
-            self.updateEmptyState()
-            
-            Managers.watchManager.sendDataArray(["cheatSheets": cheatSheets])
+        self.subscribeToCheatSheetsEvents()
+        
+        if self.shouldApplyData {
+            Managers.cheatSheetManager.fetch(completion: { [weak self] cheatSheets in
+                self?.apply(cheatSheets: cheatSheets)
+            })
         }
     }
     

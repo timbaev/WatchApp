@@ -7,12 +7,20 @@
 //
 
 import Foundation
+import AurorKit
 
-class DefaultCheatSheetsManager<Object>: CheatSheetsManager where Object: CheatSheet, Object: Storable {
+class DefaultCheatSheetsManager<Object>: CheatSheetsManager, StorageContextObserver where Object: CheatSheet, Object: Storable {
     
     // MARK: - Instance Properties
     
     fileprivate lazy var sorted = Sorted(key: "createdAt", ascending: false)
+    
+    // MARK: -
+    
+    fileprivate(set) lazy var objectsRemovedEvent = Event<[Int]>()
+    fileprivate(set) lazy var objectsAppendedEvent = Event<[CheatSheet]>()
+    fileprivate(set) lazy var objectsUpdatedEvent = Event<[CheatSheet]>()
+    fileprivate(set) lazy var objectsChangedEvent = Event<[CheatSheet]>()
     
     // MARK: -
     
@@ -28,6 +36,12 @@ class DefaultCheatSheetsManager<Object>: CheatSheetsManager where Object: CheatS
     
     fileprivate func createPredicate(withID id: String) -> NSPredicate {
         return NSPredicate(format: "id == %@", id)
+    }
+    
+    fileprivate func filter(objects: [Storable]) -> [Object] {
+        return objects.compactMap({ object in
+            return object as? Object
+        })
     }
     
     // MARK: - CheatSheetsManager
@@ -68,5 +82,41 @@ class DefaultCheatSheetsManager<Object>: CheatSheetsManager where Object: CheatS
     
     func update(block: @escaping () -> ()) {
         try? self.storageContext.update(block: block)
+    }
+    
+    func startObserving() {
+        self.storageContext.addObserver(self, to: Object.self)
+    }
+    
+    func stopObserving() {
+        self.storageContext.removeObserver(self)
+    }
+    
+    // MARK: - StorageContextObserver
+    
+    func storageContext(_ storageContext: StorageContext, didRemoveObjectsAtIndices indices: [Int]) {
+        self.objectsRemovedEvent.emit(data: indices)
+    }
+    
+    func storageContext(_ storageContext: StorageContext, didAppendObjects objects: [Storable]) {
+        let cheatSheets = self.filter(objects: objects)
+        
+        if !cheatSheets.isEmpty {
+            self.objectsAppendedEvent.emit(data: cheatSheets)
+        }
+    }
+    
+    func storageContext(_ storageContext: StorageContext, didUpdateObjects objects: [Storable]) {
+        let cheatSheets = self.filter(objects: objects)
+        
+        if !cheatSheets.isEmpty {
+            self.objectsUpdatedEvent.emit(data: cheatSheets)
+        }
+    }
+    
+    func storageContext(_ storageContext: StorageContext, didChangeObjects objects: [Storable]) {
+        self.fetch(completion: { [weak self] cheatSheets in
+            self?.objectsChangedEvent.emit(data: cheatSheets)
+        })
     }
 }

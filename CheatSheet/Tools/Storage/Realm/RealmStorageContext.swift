@@ -14,6 +14,8 @@ class RealmStorageContext: StorageContext {
     // MARK: - Instance Properties
     
     fileprivate var realm: Realm
+    fileprivate var observers: [StorageContextObserver] = []
+    fileprivate var tokens: [NotificationToken] = []
     
     // MARK: - Initializers
     
@@ -107,5 +109,55 @@ class RealmStorageContext: StorageContext {
         let accumulate: [T] = objects.map { $0 as! T }
         
         completion(accumulate)
+    }
+    
+    // MARK: -
+    
+    func addObserver<T>(_ observer: StorageContextObserver, to model: T.Type) where T : Storable {
+        guard self.observers.index(where: { $0 === observer }) == nil else {
+            return
+        }
+        
+        let token = self.realm.objects(model as! Object.Type).observe { changes in
+            switch changes {
+            case .update(let results, let deletions, let insertions, let modifications):
+                let accumulate: [T] = results.map { $0 as! T }
+                
+                if !deletions.isEmpty {
+                    observer.storageContext(self, didRemoveObjectsAtIndices: deletions)
+                }
+                
+                if !insertions.isEmpty {
+                    let insertedObjects = insertions.map { accumulate[$0] }
+                    
+                    observer.storageContext(self, didAppendObjects: insertedObjects)
+                }
+                
+                if !modifications.isEmpty {
+                    let updatedObjects = modifications.map { accumulate[$0] }
+                    
+                    observer.storageContext(self, didUpdateObjects: updatedObjects)
+                }
+                
+                observer.storageContext(self, didChangeObjects: accumulate)
+                
+            default:
+                break
+            }
+        }
+        
+        self.observers.append(observer)
+        self.tokens.append(token)
+    }
+    
+    func removeObserver(_ observer: StorageContextObserver) {
+        if let observerIndex = self.observers.index(where: { $0 === observer }) {
+            let token = self.tokens[observerIndex]
+            
+            token.invalidate()
+            
+            self.tokens.remove(at: observerIndex)
+            self.observers.remove(at: observerIndex)
+        }
     }
 }

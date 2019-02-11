@@ -1,11 +1,17 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+use_frameworks!
+
+def shared_pods
+  pod 'AurorKit'
+end
 
 target 'CheatSheet' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+  shared_pods
 
-  # Pods for CheatSheet
-  pod 'RealmSwift', '~> 3.13.1'
-
+  pod 'RealmSwift'
 end
+
+target 'CheatSheetWatch Extension' do
+  platform :watchos, '5.1'
+  shared_pods
+end
+	

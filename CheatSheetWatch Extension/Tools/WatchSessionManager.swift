@@ -8,6 +8,7 @@
 
 import Foundation
 import WatchConnectivity
+import AurorKit
 
 class WatchSessionManager: NSObject {
     
@@ -15,7 +16,7 @@ class WatchSessionManager: NSObject {
     
     fileprivate let session = WCSession.default
     
-    fileprivate let dataSourceDidChangedEvent = Event<DataSource>()
+    let dataSourceDidChangedEvent = Event<DataSource>()
     
     // MARK: -
     
@@ -26,10 +27,6 @@ class WatchSessionManager: NSObject {
     func startSession() {
         self.session.delegate = self
         self.session.activate()
-    }
-    
-    func subscribeToDataSourceChangeEvents<U: AnyObject>(target: U, handler: @escaping (DataSource) -> ()) -> Disposable {
-        return self.dataSourceDidChangedEvent.addHandler(target: target, handler: handler)
     }
 }
 
@@ -47,7 +44,7 @@ extension WatchSessionManager: WCSessionDelegate {
         Log.high("didReceiveApplicationContext()", from: self)
         
         DispatchQueue.main.async { [unowned self] in
-            self.dataSourceDidChangedEvent.raise(data: DataSource(data: applicationContext))
+            self.dataSourceDidChangedEvent.emit(data: DataSource(data: applicationContext))
         }
     }
 }
